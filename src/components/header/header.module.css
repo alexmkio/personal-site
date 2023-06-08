@@ -1,0 +1,28 @@
+.header {
+  background-color: var(--color-gray2);
+  position: sticky;
+  top: 0;
+  text-align: center;
+  padding-block: 1.8rem;
+}
+
+.header ul,
+.header li {
+  display: inline-block;
+  list-style: none;
+}
+
+.header a {
+  color: var(--color-white-50);
+  margin-inline-end: 4rem;
+  line-height: calc(78px - (18px * 2));
+  text-decoration: none;
+  font-family: var(--font-roboto);
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+}
+
+.header a:hover {
+  color: var(--color-white);
+}
