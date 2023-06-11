@@ -1,8 +1,8 @@
-import "../styles/index.css";
-import { Roboto, Lora } from "next/font/google";
+import "@styles/index.scss";
+import { Roboto, Lora, Frank_Ruhl_Libre } from "next/font/google";
 
 const roboto = Roboto({
-  weight: ["400"],
+  weight: ["400", "500", "700"],
   style: ["normal"],
   variable: "--font-roboto",
   subsets: ["latin"],
@@ -13,6 +13,14 @@ const lora = Lora({
   weight: ["400"],
   style: ["normal"],
   variable: "--font-lora",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const frankRuhlLibre = Frank_Ruhl_Libre({
+  weight: ["500"],
+  style: ["normal"],
+  variable: "--font-frank-ruhl-libre",
   subsets: ["latin"],
   display: "swap",
 });
@@ -29,7 +37,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${roboto.variable} ${lora.variable}`}>{children}</body>
+      <body
+        className={`${roboto.variable} ${lora.variable} ${frankRuhlLibre.variable}`}
+      >
+        {children}
+      </body>
     </html>
   );
 }
