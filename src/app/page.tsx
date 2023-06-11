@@ -84,6 +84,138 @@ export default function Home() {
               </div>
             </div>
           </div>
+
+          <div>
+            <div className={styles.headingRow}>
+              <div className={styles.headingColumn}>
+                <h2>Work & Education</h2>
+              </div>
+            </div>
+            <div className={styles.experienceRow}>
+              <div className={styles.experienceColumn}>
+                <div className={styles.timeline}>
+                  <div className={styles.iconWrap}>
+                    <span className={styles.workIcon}></span>
+                  </div>
+                  <div className={styles.block}>
+                    <div className={styles.bullet}></div>
+                    <div className={styles.header}>
+                      <p className={styles.timeframe}>July 2018 - Present</p>
+                      <h3 className={styles.name}>Awesome Studio</h3>
+                      <h4>Lead Designer</h4>
+                    </div>
+                    <div className={styles.description}>
+                      <p>
+                        Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex
+                        in magna consectetur nisi cupidatat laboris esse eiusmod
+                        deserunt aute do quis velit esse sed Ut proident
+                        cupidatat nulla esse cillum laborum occaecat nostrud sit
+                        dolor incididunt amet est occaecat nisi.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className={styles.block}>
+                    <div className={styles.bullet}></div>
+                    <div className={styles.header}>
+                      <p className={styles.timeframe}>July 2017 - June 2018</p>
+                      <h3 className={styles.name}>Super Cool Agency</h3>
+                      <h4>Frontend Developer</h4>
+                    </div>
+                    <div className={styles.description}>
+                      <p>
+                        Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex
+                        in magna consectetur nisi cupidatat laboris esse eiusmod
+                        deserunt aute do quis velit esse sed Ut proident
+                        cupidatat nulla esse cillum laborum occaecat nostrud sit
+                        dolor incididunt amet est occaecat nisi.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className={styles.block}>
+                    <div className={styles.bullet}></div>
+                    <div className={styles.header}>
+                      <p className={styles.timeframe}>March 2016 - June 2017</p>
+                      <h3 className={styles.name}>Epic Design Studio</h3>
+                      <h4>Frontend Developer</h4>
+                    </div>
+                    <div className={styles.description}>
+                      <p>
+                        Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex
+                        in magna consectetur nisi cupidatat laboris esse eiusmod
+                        deserunt aute do quis velit esse sed Ut proident
+                        cupidatat nulla esse cillum laborum occaecat nostrud sit
+                        dolor incididunt amet est occaecat nisi.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className={styles.experienceColumn}>
+                <div className={styles.timeline}>
+                  <div className={styles.iconWrap}>
+                    <span className={styles.educationIcon}></span>
+                  </div>
+
+                  <div className={styles.block}>
+                    <div className={styles.bullet}></div>
+                    <div className={styles.header}>
+                      <p className={styles.timeframe}>July 2011 - June 2015</p>
+                      <h3 className={styles.name}>University of Life</h3>
+                      <h4>Master Degree</h4>
+                    </div>
+                    <div className={styles.description}>
+                      <p>
+                        Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex
+                        in magna consectetur nisi cupidatat laboris esse eiusmod
+                        deserunt aute do quis velit esse sed Ut proident
+                        cupidatat nulla esse cillum laborum occaecat nostrud sit
+                        dolor incididunt amet est occaecat nisi.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className={styles.block}>
+                    <div className={styles.bullet}></div>
+                    <div className={styles.header}>
+                      <p className={styles.timeframe}>July 2009 - June 2011</p>
+                      <h3 className={styles.name}>State Design University</h3>
+                      <h4>Bachelor Degree</h4>
+                    </div>
+                    <div className={styles.description}>
+                      <p>
+                        Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex
+                        in magna consectetur nisi cupidatat laboris esse eiusmod
+                        deserunt aute do quis velit esse sed Ut proident
+                        cupidatat nulla esse cillum laborum occaecat nostrud sit
+                        dolor incididunt amet est occaecat nisi.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className={styles.block}>
+                    <div className={styles.bullet}></div>
+                    <div className={styles.header}>
+                      <p className={styles.timeframe}>July 2005 - June 2009</p>
+                      <h3 className={styles.name}>School of Hard Knocks</h3>
+                      <h4>Bachelor Degree</h4>
+                    </div>
+                    <div className={styles.description}>
+                      <p>
+                        Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex
+                        in magna consectetur nisi cupidatat laboris esse eiusmod
+                        deserunt aute do quis velit esse sed Ut proident
+                        cupidatat nulla esse cillum laborum occaecat nostrud sit
+                        dolor incididunt amet est occaecat nisi.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
 
         <section id="services">Services</section>

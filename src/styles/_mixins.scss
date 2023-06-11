@@ -120,11 +120,11 @@
 @mixin heading-block {
   position: relative;
 
-  @include mixins.breakpoint-down($breakpoint-1024) {
+  @include breakpoint-down($breakpoint-1024) {
     max-width: 800px;
   }
 
-  @include mixins.breakpoint-down($breakpoint-800) {
+  @include breakpoint-down($breakpoint-800) {
     max-width: 600px;
   }
 }
@@ -152,6 +152,23 @@
     position: absolute;
     top: 0;
     left: 0;
+  }
+}
+
+@mixin item-title {
+  font-family: var(--font-frank-ruhl-libre), serif;
+  font-size: 3.6rem;
+  font-weight: 500;
+  line-height: 1.222;
+  margin-top: 0;
+  color: #000000;
+
+  @include breakpoint-down($breakpoint-1200) {
+    font-size: 3rem;
+  }
+
+  @include breakpoint-down($breakpoint-400) {
+    font-size: 2.8rem;
   }
 }
 

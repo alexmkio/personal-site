@@ -290,6 +290,10 @@
   max-width: 1140px;
 }
 
+.headingRow {
+  @include mixins.heading-block;
+}
+
 .headingColumn {
   @include mixins.column;
   @include mixins.large-full;
@@ -377,5 +381,226 @@
 
   .btnPrimary {
     @include mixins.btn-primary;
+  }
+}
+
+/* ===================================================================
+* # experience & timeline 
+* ------------------------------------------------------------------- */
+
+.experienceRow {
+  @include mixins.row;
+  @include mixins.heading-block;
+
+  margin-top: 1.6rem;
+
+  > div {
+    &:first-of-type {
+      padding-right: 40px;
+
+      @include mixins.breakpoint-down($breakpoint-1200) {
+        padding-right: 30px;
+      }
+
+      @include mixins.breakpoint-down($breakpoint-1024) {
+        padding-right: 16px;
+      }
+
+      @include mixins.breakpoint-down($breakpoint-900) {
+        margin-bottom: 9.6rem;
+      }
+
+      @include mixins.breakpoint-down($breakpoint-600) {
+        padding-right: 10px;
+      }
+
+      @include mixins.breakpoint-down($breakpoint-400) {
+        padding-right: 0;
+      }
+    }
+
+    &:last-of-type {
+      padding-left: 40px;
+
+      @include mixins.breakpoint-down($breakpoint-1200) {
+        padding-left: 30px;
+      }
+
+      @include mixins.breakpoint-down($breakpoint-1024) {
+        padding-left: 16px;
+      }
+
+      @include mixins.breakpoint-down($breakpoint-600) {
+        padding-left: 10px;
+      }
+
+      @include mixins.breakpoint-down($breakpoint-400) {
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+.experienceColumn {
+  @include mixins.column;
+  @include mixins.large-half;
+  @include mixins.tab-full;
+}
+
+.timeline {
+  padding-top: 4.8rem;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.12);
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 5.6rem;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.12);
+    position: absolute;
+    left: 1px;
+    top: 0;
+  }
+
+  .iconWrap {
+    display: block;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    position: absolute;
+    top: -2.2rem;
+    left: 5.6rem;
+
+    @include mixins.breakpoint-down($breakpoint-1200) {
+      left: 4.4rem;
+    }
+
+    @include mixins.breakpoint-down($breakpoint-900) {
+      left: 5.6rem;
+    }
+
+    @include mixins.breakpoint-down($breakpoint-600) {
+      left: 4.4rem;
+    }
+
+    @include mixins.breakpoint-down($breakpoint-400) {
+      left: 2.8rem;
+    }
+  }
+
+  .workIcon,
+  .educationIcon {
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+  }
+
+  .workIcon {
+    background-image: url(../assets/icons/icon-briefcase.svg);
+  }
+
+  .educationIcon {
+    background-image: url(../assets/icons/icon-education.svg);
+  }
+
+  .block {
+    position: relative;
+    padding-left: 5.6rem;
+    padding-bottom: 0.8rem;
+    margin-top: 2.8rem;
+    min-height: 35.6rem;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+
+    @include mixins.breakpoint-down($breakpoint-1200) {
+      padding-left: 4.4rem;
+    }
+
+    @include mixins.breakpoint-down($breakpoint-900) {
+      min-height: 0;
+      padding-left: 5.6rem;
+    }
+
+    @include mixins.breakpoint-down($breakpoint-600) {
+      padding-left: 4.4rem;
+    }
+
+    @include mixins.breakpoint-down($breakpoint-400) {
+      padding-left: 2.8rem;
+    }
+  }
+
+  .bullet {
+    content: "";
+    display: block;
+    width: 3px;
+    height: 4.8rem;
+    background-color: #000000;
+    position: absolute;
+    left: -1px;
+    top: 8px;
+  }
+
+  .header {
+    margin-bottom: 3.2rem;
+
+    .timeframe,
+    h4 {
+      font-family: var(--font-roboto), sans-serif;
+    }
+
+    h3 {
+      margin-bottom: 0;
+    }
+    
+    h4 {
+      font-size: 2.1rem;
+      font-weight: 400;
+      line-height: 1.333;
+      margin-top: 0;
+
+      @include mixins.breakpoint-down($breakpoint-1200) {
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  .timeframe {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.714;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    margin-bottom: 0.8rem;
+    color: #000000;
+  }
+
+  .name {
+    @include mixins.item-title;
+  }
+
+  .description {
   }
 }

@@ -48,7 +48,9 @@ a {
 }
 
 h1,
-h2 {
+h2,
+h3,
+h4 {
   font-family: var(--font-frank-ruhl-libre), serif;
   font-weight: 500;
   font-style: normal;
@@ -58,12 +60,24 @@ h2 {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   margin-top: 6rem;
   margin-bottom: 1.6rem;
 
   @include mixins.breakpoint-down($breakpoint-600) {
     margin-top: 6rem;
+  }
+}
+
+
+h4 {
+  margin-top: 4.8rem;
+  margin-bottom: 1.2rem;
+
+  @include mixins.breakpoint-down($breakpoint-600) {
+    margin-top: 4rem;
+    margin-bottom: 0.8rem;
   }
 }
 
@@ -81,6 +95,16 @@ h2 {
     font-size: 3.3rem;
     letter-spacing: -0.07rem;
   }
+}
+
+h3 {
+  font-size: 2.4rem;
+  line-height: 1.1667;
+}
+
+h4 {
+  font-size: 1.8rem;
+  line-height: 1.333;
 }
 
 p {
