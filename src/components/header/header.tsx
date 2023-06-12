@@ -17,8 +17,12 @@ export default function Header() {
             </Link>
           </li>
           <li>
-            <Link href="#services" title="services" className={styles.link}>
-              Services
+            <Link
+              href="#philosophy"
+              title="development philosophy"
+              className={styles.link}
+            >
+              Philosophy
             </Link>
           </li>
           <li>

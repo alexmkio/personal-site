@@ -104,15 +104,13 @@ export default function Home() {
                       <h3 className={styles.name}>Awesome Studio</h3>
                       <h4>Lead Designer</h4>
                     </div>
-                    <div className={styles.description}>
-                      <p>
-                        Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex
-                        in magna consectetur nisi cupidatat laboris esse eiusmod
-                        deserunt aute do quis velit esse sed Ut proident
-                        cupidatat nulla esse cillum laborum occaecat nostrud sit
-                        dolor incididunt amet est occaecat nisi.
-                      </p>
-                    </div>
+                    <p>
+                      Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in
+                      magna consectetur nisi cupidatat laboris esse eiusmod
+                      deserunt aute do quis velit esse sed Ut proident cupidatat
+                      nulla esse cillum laborum occaecat nostrud sit dolor
+                      incididunt amet est occaecat nisi.
+                    </p>
                   </div>
 
                   <div className={styles.block}>
@@ -122,15 +120,13 @@ export default function Home() {
                       <h3 className={styles.name}>Super Cool Agency</h3>
                       <h4>Frontend Developer</h4>
                     </div>
-                    <div className={styles.description}>
-                      <p>
-                        Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex
-                        in magna consectetur nisi cupidatat laboris esse eiusmod
-                        deserunt aute do quis velit esse sed Ut proident
-                        cupidatat nulla esse cillum laborum occaecat nostrud sit
-                        dolor incididunt amet est occaecat nisi.
-                      </p>
-                    </div>
+                    <p>
+                      Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in
+                      magna consectetur nisi cupidatat laboris esse eiusmod
+                      deserunt aute do quis velit esse sed Ut proident cupidatat
+                      nulla esse cillum laborum occaecat nostrud sit dolor
+                      incididunt amet est occaecat nisi.
+                    </p>
                   </div>
 
                   <div className={styles.block}>
@@ -140,15 +136,13 @@ export default function Home() {
                       <h3 className={styles.name}>Epic Design Studio</h3>
                       <h4>Frontend Developer</h4>
                     </div>
-                    <div className={styles.description}>
-                      <p>
-                        Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex
-                        in magna consectetur nisi cupidatat laboris esse eiusmod
-                        deserunt aute do quis velit esse sed Ut proident
-                        cupidatat nulla esse cillum laborum occaecat nostrud sit
-                        dolor incididunt amet est occaecat nisi.
-                      </p>
-                    </div>
+                    <p>
+                      Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in
+                      magna consectetur nisi cupidatat laboris esse eiusmod
+                      deserunt aute do quis velit esse sed Ut proident cupidatat
+                      nulla esse cillum laborum occaecat nostrud sit dolor
+                      incididunt amet est occaecat nisi.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -166,15 +160,13 @@ export default function Home() {
                       <h3 className={styles.name}>University of Life</h3>
                       <h4>Master Degree</h4>
                     </div>
-                    <div className={styles.description}>
-                      <p>
-                        Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex
-                        in magna consectetur nisi cupidatat laboris esse eiusmod
-                        deserunt aute do quis velit esse sed Ut proident
-                        cupidatat nulla esse cillum laborum occaecat nostrud sit
-                        dolor incididunt amet est occaecat nisi.
-                      </p>
-                    </div>
+                    <p>
+                      Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in
+                      magna consectetur nisi cupidatat laboris esse eiusmod
+                      deserunt aute do quis velit esse sed Ut proident cupidatat
+                      nulla esse cillum laborum occaecat nostrud sit dolor
+                      incididunt amet est occaecat nisi.
+                    </p>
                   </div>
 
                   <div className={styles.block}>
@@ -184,15 +176,13 @@ export default function Home() {
                       <h3 className={styles.name}>State Design University</h3>
                       <h4>Bachelor Degree</h4>
                     </div>
-                    <div className={styles.description}>
-                      <p>
-                        Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex
-                        in magna consectetur nisi cupidatat laboris esse eiusmod
-                        deserunt aute do quis velit esse sed Ut proident
-                        cupidatat nulla esse cillum laborum occaecat nostrud sit
-                        dolor incididunt amet est occaecat nisi.
-                      </p>
-                    </div>
+                    <p>
+                      Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in
+                      magna consectetur nisi cupidatat laboris esse eiusmod
+                      deserunt aute do quis velit esse sed Ut proident cupidatat
+                      nulla esse cillum laborum occaecat nostrud sit dolor
+                      incididunt amet est occaecat nisi.
+                    </p>
                   </div>
 
                   <div className={styles.block}>
@@ -202,15 +192,13 @@ export default function Home() {
                       <h3 className={styles.name}>School of Hard Knocks</h3>
                       <h4>Bachelor Degree</h4>
                     </div>
-                    <div className={styles.description}>
-                      <p>
-                        Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex
-                        in magna consectetur nisi cupidatat laboris esse eiusmod
-                        deserunt aute do quis velit esse sed Ut proident
-                        cupidatat nulla esse cillum laborum occaecat nostrud sit
-                        dolor incididunt amet est occaecat nisi.
-                      </p>
-                    </div>
+                    <p>
+                      Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in
+                      magna consectetur nisi cupidatat laboris esse eiusmod
+                      deserunt aute do quis velit esse sed Ut proident cupidatat
+                      nulla esse cillum laborum occaecat nostrud sit dolor
+                      incididunt amet est occaecat nisi.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -218,7 +206,92 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="services">Services</section>
+        <section id="philosophy" className={styles.philosophy}>
+          <div className={styles.overlay}></div>
+          <div className={styles.headingRow}>
+            <div className={styles.headingColumn}>
+              <h2>Development Philosophy</h2>
+              <p className={styles.sectionDescription}>
+                My passion and goal is to help you make your business standout.
+              </p>
+            </div>
+          </div>
+          <div className={styles.philosophyList}>
+            <div className={styles.philosophyItemContainer}>
+              <div className={styles.philosophyItemContent}>
+                <h3>Brand Identity</h3>
+                <p>
+                  Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat
+                  consequatur sit vel illum vel et a delectus. Vel sequi vitae
+                  voluptatem perspiciatis eligendi. Voluptatibus optio natus
+                  asperiores est commodi amet quia architecto. Dolores
+                  necessitatibus et.
+                </p>
+              </div>
+            </div>
+            <div className={styles.philosophyItemContainer}>
+              <div className={styles.philosophyItemContent}>
+                <h3>Illustration</h3>
+                <p>
+                  Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat
+                  consequatur sit vel illum vel et a delectus. Vel sequi vitae
+                  voluptatem perspiciatis eligendi. Voluptatibus optio natus
+                  asperiores est commodi amet quia architecto. Dolores
+                  necessitatibus et.
+                </p>
+              </div>
+            </div>
+            <div className={styles.philosophyItemContainer}>
+              <div className={styles.philosophyItemContent}>
+                <h3>Web Design</h3>
+                <p>
+                  Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat
+                  consequatur sit vel illum vel et a delectus. Vel sequi vitae
+                  voluptatem perspiciatis eligendi. Voluptatibus optio natus
+                  asperiores est commodi amet quia architecto. Dolores
+                  necessitatibus et.
+                </p>
+              </div>
+            </div>
+            <div className={styles.philosophyItemContainer}>
+              <div className={styles.philosophyItemContent}>
+                <h3>Product Strategy</h3>
+                <p>
+                  Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat
+                  consequatur sit vel illum vel et a delectus. Vel sequi vitae
+                  voluptatem perspiciatis eligendi. Voluptatibus optio natus
+                  asperiores est commodi amet quia architecto. Dolores
+                  necessitatibus et.
+                </p>
+              </div>
+            </div>
+            <div className={styles.philosophyItemContainer}>
+              <div className={styles.philosophyItemContent}>
+                <h3>UI/UX Design</h3>
+                <p>
+                  Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat
+                  consequatur sit vel illum vel et a delectus. Vel sequi vitae
+                  voluptatem perspiciatis eligendi. Voluptatibus optio natus
+                  asperiores est commodi amet quia architecto. Dolores
+                  necessitatibus et.
+                </p>
+              </div>
+            </div>
+            <div className={styles.philosophyItemContainer}>
+              <div className={styles.philosophyItemContent}>
+                <h3>Mobile Design</h3>
+                <p>
+                  Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat
+                  consequatur sit vel illum vel et a delectus. Vel sequi vitae
+                  voluptatem perspiciatis eligendi. Voluptatibus optio natus
+                  asperiores est commodi amet quia architecto. Dolores
+                  necessitatibus et.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section id="works">Works</section>
         <section id="contact">Contact</section>
       </main>

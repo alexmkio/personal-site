@@ -18,7 +18,7 @@ const lora = Lora({
 });
 
 const frankRuhlLibre = Frank_Ruhl_Libre({
-  weight: ["500"],
+  weight: ["400", "500"],
   style: ["normal"],
   variable: "--font-frank-ruhl-libre",
   subsets: ["latin"],
