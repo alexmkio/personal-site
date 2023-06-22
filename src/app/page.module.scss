@@ -1011,3 +1011,176 @@
     }
   }
 }
+
+.testimonials {
+  padding-top: 18.4rem;
+  padding-bottom: 16rem;
+  background-color: #efefef;
+
+  .headingRow {
+    @include mixins.row;
+
+    position: relative;
+  }
+
+  .headingColumn {
+    @include mixins.column;
+    @include mixins.large-full;
+
+    position: relative;
+  }
+
+  article {
+    position: relative;
+  }
+
+  p {
+    font-family: var(--font-roboto), sans-serif;
+    font-weight: 400;
+    font-size: 4rem;
+    line-height: 1.8;
+    color: #000000;
+  }
+
+  .info {
+    height: 7.2rem;
+    margin-top: 8rem;
+    padding-left: 10rem;
+    position: relative;
+  }
+
+  .avatar {
+    width: 7.2rem;
+    height: 7.2rem;
+    border-radius: 100%;
+    outline: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .cite {
+    display: block;
+
+    strong,
+    span {
+      font-family: var(--font-roboto), sans-serif;
+      font-style: normal;
+    }
+
+    strong {
+      font-size: 2.4rem;
+      line-height: 1.5;
+    }
+
+    span {
+      display: block;
+      font-size: 1.8rem;
+      line-height: 1.333;
+      color: rgba(0, 0, 0, 0.7);
+    }
+  }
+
+  @include mixins.breakpoint-down($breakpoint-1400) {
+    p {
+      font-size: 3.8rem;
+    }
+  }
+
+  @include mixins.breakpoint-down($breakpoint-1200) {
+    .headingRow {
+      max-width: 1000px;
+    }
+
+    p {
+      font-size: 3.6rem;
+    }
+
+    .info {
+      height: 6.8rem;
+      padding-left: 9.4rem;
+    }
+
+    .avatar {
+      width: 6.8rem;
+      height: 6.8rem;
+    }
+
+    .cite {
+      strong {
+        font-size: 2.2rem;
+      }
+
+      span {
+        font-size: 1.7rem;
+      }
+    }
+  }
+
+  @include mixins.breakpoint-down($breakpoint-1000) {
+    .headingRow {
+      max-width: 800px;
+    }
+
+    p {
+      font-size: 3.2rem;
+    }
+
+    .cite {
+      strong {
+        font-size: 2rem;
+      }
+
+      span {
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  @include mixins.breakpoint-down($breakpoint-900) {
+    p {
+      font-size: 3rem;
+    }
+  }
+
+  @include mixins.breakpoint-down($breakpoint-800) {
+    padding-top: 16rem;
+    text-align: center;
+
+    p {
+      font-size: 2.8rem;
+    }
+
+    .info {
+      display: inline-block;
+      height: 6.4rem;
+      padding-left: 9rem;
+    }
+
+    .avatar {
+      width: 6.4rem;
+      height: 6.4rem;
+    }
+
+    .cite {
+      strong {
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  @include mixins.breakpoint-down($breakpoint-600) {
+    padding-top: 13.6rem;
+    padding-bottom: 13.6rem;
+
+    p {
+      font-size: 2.6rem;
+    }
+  }
+
+  @include mixins.breakpoint-down($breakpoint-400) {
+    p {
+      font-size: 2.4rem;
+    }
+  }
+}
