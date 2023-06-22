@@ -292,20 +292,136 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="works">Works</section>
+        <section id="works" className={styles.selectedWorks}>
+          <div className={styles.headingRow}>
+            <div className={styles.headingColumn}>
+              <h2>Selected Works</h2>
+              <p className={styles.sectionDescription}>
+                Here are some of my selected works I have done lately. Feel free
+                to check them out.
+              </p>
+            </div>
+          </div>
+
+          <div className={styles.masonry}>
+            <div className={styles.brick}>
+              <div className={styles.item}>
+                <div className={styles.thumb}>
+                  <Link href="#intro">
+                    <Image
+                      src="/assets/images/city-building.jpg"
+                      width={500}
+                      height={500}
+                      alt="alt text"
+                    />
+                  </Link>
+                </div>
+                <div className={styles.text}>
+                  <h3 className={styles.title}>City Building</h3>
+                  <p className={styles.subtitle}>Branding</p>
+                </div>
+              </div>
+            </div>
+
+            <div className={styles.brick}>
+              <div className={styles.item}>
+                <div className={styles.thumb}>
+                  <Link href="#intro">
+                    <Image
+                      src="/assets/images/the-beetle.jpg"
+                      width={500}
+                      height={500}
+                      alt="alt text"
+                    />
+                  </Link>
+                </div>
+                <div className={styles.text}>
+                  <h3 className={styles.title}>The Beetle</h3>
+                  <p className={styles.subtitle}>Web Development</p>
+                </div>
+              </div>
+            </div>
+
+            <div className={styles.brick}>
+              <div className={styles.item}>
+                <div className={styles.thumb}>
+                  <Link href="#intro">
+                    <Image
+                      src="/assets/images/lamp.jpg"
+                      width={500}
+                      height={500}
+                      alt="alt text"
+                    />
+                  </Link>
+                </div>
+                <div className={styles.text}>
+                  <h3 className={styles.title}>Lamp</h3>
+                  <p className={styles.subtitle}>Web Design</p>
+                </div>
+              </div>
+            </div>
+
+            <div className={styles.brick}>
+              <div className={styles.item}>
+                <div className={styles.thumb}>
+                  <Link href="#intro">
+                    <Image
+                      src="/assets/images/woodcraft.jpg"
+                      width={500}
+                      height={500}
+                      alt="alt text"
+                    />
+                  </Link>
+                </div>
+                <div className={styles.text}>
+                  <h3 className={styles.title}>Woodcraft</h3>
+                  <p className={styles.subtitle}>Web Design</p>
+                </div>
+              </div>
+            </div>
+
+            <div className={styles.brick}>
+              <div className={styles.item}>
+                <div className={styles.thumb}>
+                  <Link href="#intro">
+                    <Image
+                      src="/assets/images/shutterbug.jpg"
+                      width={500}
+                      height={500}
+                      alt="alt text"
+                    />
+                  </Link>
+                </div>
+                <div className={styles.text}>
+                  <h3 className={styles.title}>Shutterbug</h3>
+                  <p className={styles.subtitle}>Branding</p>
+                </div>
+              </div>
+            </div>
+
+            <div className={styles.brick}>
+              <div className={styles.item}>
+                <div className={styles.thumb}>
+                  <Link href="#intro">
+                    <Image
+                      src="/assets/images/fuji.jpg"
+                      width={500}
+                      height={500}
+                      alt="alt text"
+                    />
+                  </Link>
+                </div>
+                <div className={styles.text}>
+                  <h3 className={styles.title}>Fuji</h3>
+                  <p className={styles.subtitle}>Web Design</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section id="contact">Contact</section>
       </main>
     </>
   );
-}
-
-{
-  /* <Image
-  src="/vercel.svg"
-  alt="Vercel Logo"
-  className={styles.vercelLogo}
-  width={100}
-  height={24}
-  priority
-/>; */
 }

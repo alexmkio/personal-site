@@ -7,31 +7,27 @@ export default function Header() {
       <nav>
         <ul>
           <li>
-            <Link href="#intro" title="intro" className={styles.link}>
+            <Link href="#intro" className={styles.link}>
               Intro
             </Link>
           </li>
           <li>
-            <Link href="#about" title="about" className={styles.link}>
+            <Link href="#about" className={styles.link}>
               About
             </Link>
           </li>
           <li>
-            <Link
-              href="#philosophy"
-              title="development philosophy"
-              className={styles.link}
-            >
+            <Link href="#philosophy" className={styles.link}>
               Philosophy
             </Link>
           </li>
           <li>
-            <Link href="#works" title="works" className={styles.link}>
+            <Link href="#works" className={styles.link}>
               Works
             </Link>
           </li>
           <li>
-            <Link href="#contact" title="contact us" className={styles.link}>
+            <Link href="#contact" className={styles.link}>
               Say Hello
             </Link>
           </li>
