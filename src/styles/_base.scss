@@ -1,0 +1,116 @@
+@use "@styles/colors" as *;
+@use "@styles/mixins" as mixins;
+@use "@styles/variables" as *;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  max-width: 100dvw;
+}
+
+body {
+  background-color: $color-gray2;
+  font-family: var(--font-lora), serif;
+  font-size: 1.7rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.882;
+  color: $color-black;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: $color-secondary-pink;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  line-height: inherit;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color-black;
+  }
+
+  &:hover,
+  &:active {
+    outline: 0;
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-frank-ruhl-libre), serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #000000;
+  font-variant-ligatures: common-ligatures;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 6rem;
+  margin-bottom: 1.6rem;
+
+  @include mixins.breakpoint-down($breakpoint-600) {
+    margin-top: 6rem;
+  }
+}
+
+
+h4 {
+  margin-top: 4.8rem;
+  margin-bottom: 1.2rem;
+
+  @include mixins.breakpoint-down($breakpoint-600) {
+    margin-top: 4rem;
+    margin-bottom: 0.8rem;
+  }
+}
+
+h1 {
+  font-size: 2.4rem;
+  line-height: 1.1667;
+}
+
+h2 {
+  font-size: 3.6rem;
+  line-height: 1.222;
+  letter-spacing: -0.1rem;
+
+  @include mixins.breakpoint-down($breakpoint-600) {
+    font-size: 3.3rem;
+    letter-spacing: -0.07rem;
+  }
+}
+
+h3 {
+  font-size: 2.4rem;
+  line-height: 1.1667;
+}
+
+h4 {
+  font-size: 1.8rem;
+  line-height: 1.333;
+}
+
+p {
+  margin-bottom: 3.2rem;
+}
+
+button {
+  @include mixins.button;
+}

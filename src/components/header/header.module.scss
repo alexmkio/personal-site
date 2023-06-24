@@ -1,0 +1,32 @@
+@use "@styles/colors" as *;
+
+.header {
+  margin-block-start: 2rem;
+  background-color: $color-gray2;
+  position: sticky;
+  top: 0;
+  text-align: center;
+  padding-block: 1.8rem;
+  z-index: 100;
+
+  ul,
+  li {
+    display: inline-block;
+    list-style: none;
+  }
+
+  a {
+    color: $color-white-50;
+    margin-inline-end: 4rem;
+    line-height: calc(78px - (18px * 2));
+    text-decoration: none;
+    font-family: var(--font-roboto);
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+
+    &:hover {
+      color: $color-white;
+    }
+  }
+}
