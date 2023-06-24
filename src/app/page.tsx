@@ -449,7 +449,51 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="contact">Contact</section>
+        <section id="contact" className={styles.contact}>
+          <div className={styles.headingRow}>
+            <div className={styles.headingColumn}>
+              <h2>Get In Touch</h2>
+            </div>
+          </div>
+          <div className={styles.mainRow}>
+            <div className={styles.mainColumn}>
+              <p className={styles.email}>
+                <a href="mailto:#0" target="_blank">hello@epitome.com</a>
+              </p>
+              <p className={styles.description}>
+                I'm happy to connect, listen and help. Let's work together and
+                build something awesome. Let's turn your idea to an even greater
+                product. <a href="mailto:#0" target="_blank">Email Me</a>.
+              </p>
+            </div>
+          </div>
+          <div className={styles.infos}>
+            <div className={styles.socialInfo}>
+              <h3>Call Me</h3>
+              <a href="tel:197-543-2345">+197 543 2345</a>
+            </div>
+            <div className={styles.professionalInfo}>
+              <h3>Social</h3>
+              <ul>
+                <li>
+                  <a href="#0" title="Facebook">
+                    Facebook
+                  </a>
+                </li>
+                <li>
+                  <a href="#0" title="Twitter">
+                    Twitter
+                  </a>
+                </li>
+                <li>
+                  <a href="#0" title="Instagram">
+                    Instagram
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
       </main>
     </>
   );
