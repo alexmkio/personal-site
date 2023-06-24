@@ -38,6 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
+        id="top"
         className={`${roboto.variable} ${lora.variable} ${frankRuhlLibre.variable}`}
       >
         {children}

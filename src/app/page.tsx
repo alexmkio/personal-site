@@ -458,12 +458,18 @@ export default function Home() {
           <div className={styles.mainRow}>
             <div className={styles.mainColumn}>
               <p className={styles.email}>
-                <a href="mailto:#0" target="_blank">hello@epitome.com</a>
+                <a href="mailto:#0" target="_blank">
+                  hello@epitome.com
+                </a>
               </p>
               <p className={styles.description}>
                 I'm happy to connect, listen and help. Let's work together and
                 build something awesome. Let's turn your idea to an even greater
-                product. <a href="mailto:#0" target="_blank">Email Me</a>.
+                product.{" "}
+                <a href="mailto:#0" target="_blank">
+                  Email Me
+                </a>
+                .
               </p>
             </div>
           </div>
@@ -495,6 +501,19 @@ export default function Home() {
           </div>
         </section>
       </main>
+      <footer className={styles.footer}>
+        <div className={styles.row}>
+          <div className={styles.column}>
+            <span>© Copyright Epitome 2019</span>
+            <span>
+              Design by <a href="https://www.styleshout.com/">StyleShout</a>
+            </span>
+          </div>
+          <div className={styles.goToTop}>
+            <a title="Back to Top" href="#top"></a>
+          </div>
+        </div>
+      </footer>
     </>
   );
 }
