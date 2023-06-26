@@ -70,7 +70,6 @@ h3 {
   }
 }
 
-
 h4 {
   margin-top: 4.8rem;
   margin-bottom: 1.2rem;
@@ -113,4 +112,103 @@ p {
 
 button {
   @include mixins.button;
+}
+
+/* ===================================================================
+ * # React Slick slider
+ * ------------------------------------------------------------------- */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-slide {
+  outline: none;
+  display: block;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+
+.slick-dots {
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  bottom: 3.6rem;
+  right: 4rem;
+
+  li {
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    margin: 0;
+    padding: 9px;
+    cursor: pointer;
+
+    button {
+      display: block;
+      width: 10px;
+      height: 10px;
+      line-height: 10px;
+      border-radius: 50%;
+      background-color: rgba(0, 0, 0, 0.4);
+      border: none;
+      padding: 0;
+      margin: 0;
+      cursor: pointer;
+      font: 0/0 a;
+      text-shadow: none;
+      color: transparent;
+
+      &:hover,
+      &:focus {
+        outline: none;
+      }
+    }
+
+    &.slick-active,
+    &:hover {
+      button {
+        background-color: #cf1767;
+      }
+    }
+  }
+}
+
+@include mixins.breakpoint-down($breakpoint-800) {
+  .slick-dots {
+    margin-top: 4rem;
+    position: static;
+  }
 }
