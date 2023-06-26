@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "./page.module.scss";
 import Link from "next/link";
 import Header from "@components/header/header";
+import SimpleSlider from "@components/slider/slider";
 
 export default function Home() {
   return (
@@ -420,34 +421,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className={styles.testimonials}>
-          <div className={styles.headingRow}>
-            <div className={styles.headingColumn}>
-              <article>
-                <p>
-                  Molestiae incidunt consequatur quis ipsa autem nam sit enim
-                  magni. Voluptas tempore rem. Explicabo a quaerat sint autem
-                  dolore ducimus ut consequatur neque. Nisi dolores quaerat fuga
-                  rem nihil nostrum. Laudantium quia consequatur molestias
-                  delectus culpa.
-                </p>
-                <div className={styles.info}>
-                  <Image
-                    src="/assets/images/user-02.jpg"
-                    width={300}
-                    height={300}
-                    alt="Author image"
-                    className={styles.avatar}
-                  />
-                  <cite className={styles.cite}>
-                    <strong>Tim Cook</strong>
-                    <span>CEO, Apple</span>
-                  </cite>
-                </div>
-              </article>
-            </div>
-          </div>
-        </section>
+        <SimpleSlider />
 
         <section id="contact" className={styles.contact}>
           <div className={styles.headingRow}>
