@@ -2,11 +2,22 @@
 import Image from "next/image";
 import styles from "./page.module.scss";
 import Link from "next/link";
+import { motion } from "framer-motion";
 import Header from "@components/header/header";
 import SimpleSlider from "@components/slider/slider";
 import { Element as ReactScrollElement, animateScroll } from "react-scroll";
 
 export default function Home() {
+  const easeInSine = [0.47, 0, 0.745, 0.715];
+  const animationOptions = {
+    initial: { opacity: 0, y: 200 },
+    whileInView: { opacity: 1, y: 0 },
+    viewport: { once: true },
+    transition: { duration: 0.6, ease: easeInSine, delay: 0.3 },
+  };
+
+  <motion.div className={styles.headingRow} {...animationOptions}></motion.div>;
+
   return (
     <>
       <Header />
@@ -31,12 +42,12 @@ export default function Home() {
 
         <ReactScrollElement name="about" className={styles.about}>
           <div>
-            <div className={styles.headingRow}>
+            <motion.div className={styles.headingRow} {...animationOptions}>
               <div className={styles.headingColumn}>
                 <h2>About Me</h2>
               </div>
-            </div>
-            <div className={styles.aboutMeRow}>
+            </motion.div>
+            <motion.div className={styles.aboutMeRow} {...animationOptions}>
               <div className={styles.aboutMeColumn}>
                 <p>
                   Nulla aspernatur nam et accusantium. Tempore delectus
@@ -73,29 +84,32 @@ export default function Home() {
                   rem.
                 </p>
               </div>
-            </div>
+            </motion.div>
             <div className={styles.aboutMeButtons}>
-              <div>
+              <motion.div {...animationOptions}>
                 <a href="#0" className={styles.btnStroke}>
                   Hire Me
                 </a>
-              </div>
-              <div>
+              </motion.div>
+              <motion.div {...animationOptions}>
                 <a href="#0" className={styles.btnPrimary}>
                   Download CV
                 </a>
-              </div>
+              </motion.div>
             </div>
           </div>
 
           <div>
-            <div className={styles.headingRow}>
+            <motion.div className={styles.headingRow} {...animationOptions}>
               <div className={styles.headingColumn}>
                 <h2>Work & Education</h2>
               </div>
-            </div>
+            </motion.div>
             <div className={styles.experienceRow}>
-              <div className={styles.experienceColumn}>
+              <motion.div
+                className={styles.experienceColumn}
+                {...animationOptions}
+              >
                 <div className={styles.timeline}>
                   <div className={styles.iconWrap}>
                     <span className={styles.workIcon}></span>
@@ -148,9 +162,12 @@ export default function Home() {
                     </p>
                   </div>
                 </div>
-              </div>
+              </motion.div>
 
-              <div className={styles.experienceColumn}>
+              <motion.div
+                className={styles.experienceColumn}
+                {...animationOptions}
+              >
                 <div className={styles.timeline}>
                   <div className={styles.iconWrap}>
                     <span className={styles.educationIcon}></span>
@@ -204,23 +221,26 @@ export default function Home() {
                     </p>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             </div>
           </div>
         </ReactScrollElement>
 
         <ReactScrollElement name="philosophy" className={styles.philosophy}>
           <div className={styles.overlay}></div>
-          <div className={styles.headingRow}>
+          <motion.div className={styles.headingRow} {...animationOptions}>
             <div className={styles.headingColumn}>
               <h2>Development Philosophy</h2>
               <p className={styles.sectionDescription}>
                 My passion and goal is to help you make your business standout.
               </p>
             </div>
-          </div>
+          </motion.div>
           <div className={styles.philosophyList}>
-            <div className={styles.philosophyItemContainer}>
+            <motion.div
+              className={styles.philosophyItemContainer}
+              {...animationOptions}
+            >
               <div className={styles.philosophyItemContent}>
                 <h3>Brand Identity</h3>
                 <p>
@@ -231,8 +251,11 @@ export default function Home() {
                   necessitatibus et.
                 </p>
               </div>
-            </div>
-            <div className={styles.philosophyItemContainer}>
+            </motion.div>
+            <motion.div
+              className={styles.philosophyItemContainer}
+              {...animationOptions}
+            >
               <div className={styles.philosophyItemContent}>
                 <h3>Illustration</h3>
                 <p>
@@ -243,8 +266,11 @@ export default function Home() {
                   necessitatibus et.
                 </p>
               </div>
-            </div>
-            <div className={styles.philosophyItemContainer}>
+            </motion.div>
+            <motion.div
+              className={styles.philosophyItemContainer}
+              {...animationOptions}
+            >
               <div className={styles.philosophyItemContent}>
                 <h3>Web Design</h3>
                 <p>
@@ -255,8 +281,11 @@ export default function Home() {
                   necessitatibus et.
                 </p>
               </div>
-            </div>
-            <div className={styles.philosophyItemContainer}>
+            </motion.div>
+            <motion.div
+              className={styles.philosophyItemContainer}
+              {...animationOptions}
+            >
               <div className={styles.philosophyItemContent}>
                 <h3>Product Strategy</h3>
                 <p>
@@ -267,8 +296,11 @@ export default function Home() {
                   necessitatibus et.
                 </p>
               </div>
-            </div>
-            <div className={styles.philosophyItemContainer}>
+            </motion.div>
+            <motion.div
+              className={styles.philosophyItemContainer}
+              {...animationOptions}
+            >
               <div className={styles.philosophyItemContent}>
                 <h3>UI/UX Design</h3>
                 <p>
@@ -279,8 +311,11 @@ export default function Home() {
                   necessitatibus et.
                 </p>
               </div>
-            </div>
-            <div className={styles.philosophyItemContainer}>
+            </motion.div>
+            <motion.div
+              className={styles.philosophyItemContainer}
+              {...animationOptions}
+            >
               <div className={styles.philosophyItemContent}>
                 <h3>Mobile Design</h3>
                 <p>
@@ -291,12 +326,12 @@ export default function Home() {
                   necessitatibus et.
                 </p>
               </div>
-            </div>
+            </motion.div>
           </div>
         </ReactScrollElement>
 
         <ReactScrollElement name="works" className={styles.selectedWorks}>
-          <div className={styles.headingRow}>
+          <motion.div className={styles.headingRow} {...animationOptions}>
             <div className={styles.headingColumn}>
               <h2>Selected Works</h2>
               <p className={styles.sectionDescription}>
@@ -304,10 +339,9 @@ export default function Home() {
                 to check them out.
               </p>
             </div>
-          </div>
-
+          </motion.div>
           <div className={styles.masonry}>
-            <div className={styles.brick}>
+            <motion.div className={styles.brick} {...animationOptions}>
               <div className={styles.item}>
                 <div className={styles.thumb}>
                   <Link href="#intro">
@@ -324,9 +358,8 @@ export default function Home() {
                   <p className={styles.subtitle}>Branding</p>
                 </div>
               </div>
-            </div>
-
-            <div className={styles.brick}>
+            </motion.div>
+            <motion.div className={styles.brick} {...animationOptions}>
               <div className={styles.item}>
                 <div className={styles.thumb}>
                   <Link href="#intro">
@@ -343,9 +376,8 @@ export default function Home() {
                   <p className={styles.subtitle}>Web Development</p>
                 </div>
               </div>
-            </div>
-
-            <div className={styles.brick}>
+            </motion.div>
+            <motion.div className={styles.brick} {...animationOptions}>
               <div className={styles.item}>
                 <div className={styles.thumb}>
                   <Link href="#intro">
@@ -362,9 +394,8 @@ export default function Home() {
                   <p className={styles.subtitle}>Web Design</p>
                 </div>
               </div>
-            </div>
-
-            <div className={styles.brick}>
+            </motion.div>
+            <motion.div className={styles.brick} {...animationOptions}>
               <div className={styles.item}>
                 <div className={styles.thumb}>
                   <Link href="#intro">
@@ -381,9 +412,8 @@ export default function Home() {
                   <p className={styles.subtitle}>Web Design</p>
                 </div>
               </div>
-            </div>
-
-            <div className={styles.brick}>
+            </motion.div>
+            <motion.div className={styles.brick} {...animationOptions}>
               <div className={styles.item}>
                 <div className={styles.thumb}>
                   <Link href="#intro">
@@ -400,9 +430,8 @@ export default function Home() {
                   <p className={styles.subtitle}>Branding</p>
                 </div>
               </div>
-            </div>
-
-            <div className={styles.brick}>
+            </motion.div>
+            <motion.div className={styles.brick} {...animationOptions}>
               <div className={styles.item}>
                 <div className={styles.thumb}>
                   <Link href="#intro">
@@ -419,19 +448,19 @@ export default function Home() {
                   <p className={styles.subtitle}>Web Design</p>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </ReactScrollElement>
 
         <SimpleSlider />
 
         <ReactScrollElement name="contact" className={styles.contact}>
-          <div className={styles.headingRow}>
+          <motion.div className={styles.headingRow} {...animationOptions}>
             <div className={styles.headingColumn}>
               <h2>Get In Touch</h2>
             </div>
-          </div>
-          <div className={styles.mainRow}>
+          </motion.div>
+          <motion.div className={styles.mainRow} {...animationOptions}>
             <div className={styles.mainColumn}>
               <p className={styles.email}>
                 <a href="mailto:#0" target="_blank">
@@ -448,8 +477,8 @@ export default function Home() {
                 .
               </p>
             </div>
-          </div>
-          <div className={styles.infos}>
+          </motion.div>
+          <motion.div className={styles.infos} {...animationOptions}>
             <div className={styles.socialInfo}>
               <h3>Call Me</h3>
               <a href="tel:197-543-2345">+197 543 2345</a>
@@ -474,7 +503,7 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-          </div>
+          </motion.div>
         </ReactScrollElement>
       </main>
       <footer className={styles.footer}>
