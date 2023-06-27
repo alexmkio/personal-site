@@ -2,7 +2,16 @@
 import Image from "next/image";
 import React, { Component } from "react";
 import Slider from "react-slick";
+import { motion } from "framer-motion";
 import styles from "./slider.module.scss";
+
+const easeInSine = [0.47, 0, 0.745, 0.715];
+const animationOptions = {
+  initial: { opacity: 0, y: 200 },
+  whileInView: { opacity: 1, y: 0 },
+  viewport: { once: true },
+  transition: { duration: 0.6, ease: easeInSine, delay: 0.3 },
+};
 
 export default class SimpleSlider extends Component {
   render() {
@@ -34,7 +43,7 @@ export default class SimpleSlider extends Component {
     };
     return (
       <section className={styles.testimonials}>
-        <div className={styles.headingRow}>
+        <motion.div className={styles.headingRow} {...animationOptions}>
           <Slider {...settings} className={styles.headingColumn}>
             <article>
               <p>
@@ -102,7 +111,7 @@ export default class SimpleSlider extends Component {
               </div>
             </article>
           </Slider>
-        </div>
+        </motion.div>
       </section>
     );
   }
