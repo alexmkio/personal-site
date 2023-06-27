@@ -1,15 +1,17 @@
+"use client";
 import Image from "next/image";
 import styles from "./page.module.scss";
 import Link from "next/link";
 import Header from "@components/header/header";
 import SimpleSlider from "@components/slider/slider";
+import { Element as ReactScrollElement, animateScroll } from "react-scroll";
 
 export default function Home() {
   return (
     <>
       <Header />
       <main>
-        <section id="intro" className={styles.intro}>
+        <ReactScrollElement name="intro" className={styles.intro}>
           <div className={styles.introContent}>
             <div className={styles.introText}>
               <h1>Hello, I'm John Doe</h1>
@@ -25,9 +27,9 @@ export default function Home() {
             <div className={styles.introGrid}></div>
             <div className={styles.introPic}></div>
           </div>
-        </section>
+        </ReactScrollElement>
 
-        <section id="about" className={styles.about}>
+        <ReactScrollElement name="about" className={styles.about}>
           <div>
             <div className={styles.headingRow}>
               <div className={styles.headingColumn}>
@@ -205,9 +207,9 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </ReactScrollElement>
 
-        <section id="philosophy" className={styles.philosophy}>
+        <ReactScrollElement name="philosophy" className={styles.philosophy}>
           <div className={styles.overlay}></div>
           <div className={styles.headingRow}>
             <div className={styles.headingColumn}>
@@ -291,9 +293,9 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </ReactScrollElement>
 
-        <section id="works" className={styles.selectedWorks}>
+        <ReactScrollElement name="works" className={styles.selectedWorks}>
           <div className={styles.headingRow}>
             <div className={styles.headingColumn}>
               <h2>Selected Works</h2>
@@ -419,11 +421,11 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </ReactScrollElement>
 
         <SimpleSlider />
 
-        <section id="contact" className={styles.contact}>
+        <ReactScrollElement name="contact" className={styles.contact}>
           <div className={styles.headingRow}>
             <div className={styles.headingColumn}>
               <h2>Get In Touch</h2>
@@ -473,7 +475,7 @@ export default function Home() {
               </ul>
             </div>
           </div>
-        </section>
+        </ReactScrollElement>
       </main>
       <footer className={styles.footer}>
         <div className={styles.row}>
@@ -484,7 +486,15 @@ export default function Home() {
             </span>
           </div>
           <div className={styles.goToTop}>
-            <a title="Back to Top" href="#top"></a>
+            <a
+              className={styles.arrow}
+              onClick={() =>
+                animateScroll.scrollToTop({
+                  duration: 800,
+                  smooth: true,
+                })
+              }
+            ></a>
           </div>
         </div>
       </footer>
