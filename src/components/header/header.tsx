@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Link as ReactScrollLink } from "react-scroll";
 import styles from "./header.module.scss";
 
 export default function Header() {
@@ -7,29 +7,64 @@ export default function Header() {
       <nav>
         <ul>
           <li>
-            <Link href="#intro" className={styles.link}>
+            <ReactScrollLink
+              activeClass="active"
+              className={styles.link}
+              to="intro"
+              spy={true}
+              smooth={true}
+              duration={800}
+            >
               Intro
-            </Link>
+            </ReactScrollLink>
           </li>
           <li>
-            <Link href="#about" className={styles.link}>
+            <ReactScrollLink
+              activeClass="active"
+              className={styles.link}
+              to="about"
+              spy={true}
+              smooth={true}
+              duration={800}
+            >
               About
-            </Link>
+            </ReactScrollLink>
           </li>
           <li>
-            <Link href="#philosophy" className={styles.link}>
+            <ReactScrollLink
+              activeClass="active"
+              className={styles.link}
+              to="philosophy"
+              spy={true}
+              smooth={true}
+              duration={800}
+            >
               Philosophy
-            </Link>
+            </ReactScrollLink>
           </li>
           <li>
-            <Link href="#works" className={styles.link}>
+            <ReactScrollLink
+              activeClass="active"
+              className={styles.link}
+              to="works"
+              spy={true}
+              smooth={true}
+              duration={800}
+            >
               Works
-            </Link>
+            </ReactScrollLink>
           </li>
           <li>
-            <Link href="#contact" className={styles.link}>
+            <ReactScrollLink
+              activeClass="active"
+              className={styles.link}
+              to="contact"
+              spy={true}
+              smooth={true}
+              duration={800}
+            >
               Say Hello
-            </Link>
+            </ReactScrollLink>
           </li>
         </ul>
       </nav>

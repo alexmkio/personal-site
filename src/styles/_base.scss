@@ -29,6 +29,14 @@ body {
   padding: 0;
 }
 
+header {
+  a {
+    &.active {
+      color: $color-white;
+    }
+  }
+}
+
 a {
   color: $color-secondary-pink;
   transition: all 0.3s ease-in-out;

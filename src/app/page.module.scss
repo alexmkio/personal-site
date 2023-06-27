@@ -1243,7 +1243,7 @@
     right: 6rem;
     z-index: 2;
 
-    a {
+    .arrow {
       display: block;
       background: rgba(255, 255, 255, 0.05);
       text-decoration: none;
@@ -1300,6 +1300,10 @@
       position: absolute;
       left: calc(30px + 15px);
       top: -165px;
+    }
+
+    &:hover {
+      cursor: pointer;
     }
   }
 
