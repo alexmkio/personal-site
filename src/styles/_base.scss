@@ -151,18 +151,18 @@ button {
 
 .slick-track {
   position: relative;
-  left: 0;
+  inset-inline-start: 0;
   top: 0;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
   transform: translate3d(0, 0, 0);
 }
 
 .slick-slide {
   outline: none;
   display: block;
-  float: left;
+  float: inline-start;
   height: 100%;
   min-height: 1px;
 }
@@ -174,7 +174,7 @@ button {
   margin: 0;
   position: absolute;
   bottom: 3.6rem;
-  right: 4rem;
+  inset-inline-end: 4rem;
 
   li {
     display: inline-block;

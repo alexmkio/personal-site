@@ -17,7 +17,6 @@
     @include mixins.large-full;
 
     position: relative;
-
   }
 
   article {
@@ -35,7 +34,7 @@
   .info {
     height: 7.2rem;
     margin-top: 8rem;
-    padding-left: 10rem;
+    padding-inline-start: 10rem;
     position: relative;
   }
 
@@ -46,7 +45,7 @@
     outline: none;
     position: absolute;
     top: 0;
-    left: 0;
+    inset-inline-start: 0;
   }
 
   .cite {
@@ -88,7 +87,7 @@
 
     .info {
       height: 6.8rem;
-      padding-left: 9.4rem;
+      padding-inline-start: 9.4rem;
     }
 
     .avatar {
@@ -144,7 +143,7 @@
     .info {
       display: inline-block;
       height: 6.4rem;
-      padding-left: 9rem;
+      padding-inline-start: 9rem;
     }
 
     .avatar {
