@@ -60,6 +60,8 @@
   top: 18px;
   background-color: inherit;
   border: none;
+  padding: 0;
+  margin: 0;
 
   &:hover,
   &:focus {
@@ -143,14 +145,16 @@
     min-height: 78px;
 
     nav {
-      display: none;
-      padding: 120px 44px 64px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 700ms ease;
 
       &.isClicked {
-        display: block;
+        max-height: 1000px;
       }
 
       ul {
+        margin: 120px 44px 64px;
         display: block;
         text-align: left;
         border-top: 1px solid rgba(255, 255, 255, 0.05);
