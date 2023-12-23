@@ -20,34 +20,34 @@
   .row {
     width: auto;
     max-width: none;
-    margin-left: -20px;
-    margin-right: -20px;
+    margin-inline-start: -20px;
+    margin-inline-end: -20px;
   }
 
   @include breakpoint-down($breakpoint-1200) {
     .row {
-      margin-left: -16px;
-      margin-right: -16px;
+      margin-inline-start: -16px;
+      margin-inline-end: -16px;
     }
   }
 
   @include breakpoint-down($breakpoint-600) {
     width: auto;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-inline-start: 25px;
+    padding-inline-end: 25px;
 
     .row {
-      margin-left: -10px;
-      margin-right: -10px;
-      padding-left: 0;
-      padding-right: 0;
+      margin-inline-start: -10px;
+      margin-inline-end: -10px;
+      padding-inline-start: 0;
+      padding-inline-end: 0;
     }
   }
 
   @include breakpoint-down($breakpoint-400) {
     .row {
-      margin-left: 0;
-      margin-right: 0;
+      margin-inline-start: 0;
+      margin-inline-end: 0;
     }
   }
 }
@@ -72,8 +72,8 @@
     flex: 0 0 100%;
     max-width: 100%;
     width: 100%;
-    margin-left: 0;
-    margin-right: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
     padding: 0;
   }
 }
@@ -216,7 +216,7 @@
     background-color: #cf1767;
     position: absolute;
     top: 0;
-    left: 0;
+    inset-inline-start: 0;
   }
 }
 
@@ -226,10 +226,10 @@
   padding-bottom: 3.2rem;
 
   &::before {
-    margin-left: -75px;
+    margin-inline-start: -75px;
     top: auto;
     bottom: 0;
-    left: 50%;
+    inset-inline-start: 50%;
   }
 }
 
@@ -293,7 +293,10 @@
   height: 6rem;
   line-height: 5.6rem;
   padding: 0 3.2rem;
-  margin: 0 0.4rem 1.6rem 0;
+  margin-block-start: 0;
+  margin-inline-end: 0.4rem;
+  margin-block-end: 1.6rem;
+  margin-inline-start: 0;
   color: #000000;
   text-decoration: none;
   text-align: center;

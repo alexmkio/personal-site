@@ -56,7 +56,7 @@
   color: rgba(255, 255, 255, 0.5);
   transition: all 0.3s;
   position: absolute;
-  right: 32px;
+  inset-inline-end: 32px;
   top: 18px;
   background-color: inherit;
   border: none;
@@ -81,8 +81,8 @@
     color: transparent;
     position: absolute;
     top: 50%;
-    left: 9px;
-    right: auto;
+    inset-inline-start: 9px;
+    inset-inline-end: auto;
     bottom: auto;
 
     &::before,
@@ -92,7 +92,7 @@
       height: 100%;
       background-color: inherit;
       position: absolute;
-      left: 0;
+      inset-inline-start: 0;
       transition: all 0.5s;
     }
 
@@ -156,7 +156,7 @@
       ul {
         margin: 120px 44px 64px;
         display: block;
-        text-align: left;
+        text-align: start;
         border-top: 1px solid rgba(255, 255, 255, 0.05);
       }
 
