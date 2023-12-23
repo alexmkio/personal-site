@@ -1,10 +1,18 @@
 import { Link as ReactScrollLink } from "react-scroll";
 import styles from "./header.module.scss";
+import { useState } from "react";
+import classNames from "classnames";
 
 export default function Header() {
+  const [clicked, setClicked] = useState(false);
+
+  const handleClick = () => {
+    setClicked(!clicked);
+  };
+
   return (
     <header className={styles.header}>
-      <nav>
+      <nav className={clicked ? styles.isClicked : ""}>
         <ul>
           <li>
             <ReactScrollLink
@@ -68,6 +76,16 @@ export default function Header() {
           </li>
         </ul>
       </nav>
+      <button
+        className={classNames(
+          styles.headerMenuToggle,
+          clicked ? styles.isClicked : ""
+        )}
+        onClick={handleClick}
+        aria-label="Toggle Menu"
+      >
+        <span>Menu</span>
+      </button>
     </header>
   );
 }

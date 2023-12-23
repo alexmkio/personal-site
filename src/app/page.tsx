@@ -13,10 +13,8 @@ export default function Home() {
     initial: { opacity: 0, y: 200 },
     whileInView: { opacity: 1, y: 0 },
     viewport: { once: true },
-    transition: { duration: 0.6, ease: easeInSine, delay: 0.3 },
+    transition: { duration: 0.7, ease: easeInSine, delay: 0.3 },
   };
-
-  <motion.div className={styles.headingRow} {...animationOptions}></motion.div>;
 
   return (
     <>
