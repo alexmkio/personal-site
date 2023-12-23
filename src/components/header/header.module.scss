@@ -1,7 +1,10 @@
 @use "@styles/colors" as *;
+@use "@styles/mixins" as mixins;
+@use "@styles/variables" as *;
 
 .header {
   margin-block-start: 2rem;
+  min-height: none;
   background-color: $color-gray2;
   position: sticky;
   top: 0;
@@ -11,13 +14,17 @@
 
   ul,
   li {
-    display: inline-block;
     list-style: none;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
   }
 
   a {
     color: $color-white-50;
-    margin-inline-end: 4rem;
     line-height: calc(78px - (18px * 2));
     text-decoration: none;
     font-family: var(--font-roboto);
@@ -25,9 +32,144 @@
     text-transform: uppercase;
     letter-spacing: 0.3rem;
 
-    &:hover {
+    &:hover,
+    &:focus,
+    &:active {
       color: $color-white;
+    }
+
+    &:hover {
       cursor: pointer;
     }
+  }
+}
+
+.headerMenuToggle {
+  display: none;
+  height: 42px;
+  width: 42px;
+  line-height: 42px;
+  font-family: var(--font-lora), serif;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  color: rgba(255, 255, 255, 0.5);
+  transition: all 0.3s;
+  position: absolute;
+  right: 32px;
+  top: 18px;
+  background-color: inherit;
+  border: none;
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: inherit;
+  }
+
+  span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    margin-top: -1px;
+    background-color: #ffffff;
+    transition: all 0.5s;
+    font: 0/0 a;
+    text-shadow: none;
+    color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 9px;
+    right: auto;
+    bottom: auto;
+
+    &::before,
+    &::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-color: inherit;
+      position: absolute;
+      left: 0;
+      transition: all 0.5s;
+    }
+
+    &::before {
+      top: -9px;
+    }
+
+    &::after {
+      bottom: -9px;
+    }
+  }
+
+  &.isClicked {
+    span {
+      background-color: rgba(255, 255, 255, 0);
+      transition: all 0.1s;
+
+      &::before,
+      &::after {
+        background-color: white;
+      }
+
+      &::before {
+        top: 0;
+        -webkit-transform: rotate(135deg);
+        transform: rotate(135deg);
+      }
+
+      &::after {
+        bottom: 0;
+        -webkit-transform: rotate(225deg);
+        transform: rotate(225deg);
+      }
+    }
+  }
+}
+
+@include mixins.breakpoint-down($breakpoint-800) {
+  .header {
+    a {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@include mixins.breakpoint-down($breakpoint-800) {
+  .header {
+    margin-block-start: 0;
+    padding-block: 0;
+    min-height: 78px;
+
+    nav {
+      display: none;
+      padding: 120px 44px 64px;
+
+      &.isClicked {
+        display: block;
+      }
+
+      ul {
+        display: block;
+        text-align: left;
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+      }
+
+      li {
+        display: block;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      }
+    }
+
+    a {
+      display: block;
+      padding: 18px 0;
+      line-height: 20px;
+    }
+  }
+
+  .headerMenuToggle {
+    display: block;
   }
 }
