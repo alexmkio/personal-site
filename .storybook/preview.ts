@@ -1,4 +1,7 @@
 import type { Preview } from "@storybook/react";
+import { initializeRTL } from "storybook-addon-rtl";
+
+initializeRTL();
 
 const preview: Preview = {
   parameters: {
