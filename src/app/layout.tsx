@@ -1,4 +1,5 @@
 import "@styles/index.scss";
+import { Metadata } from "next";
 import { Roboto, Lora, Frank_Ruhl_Libre } from "next/font/google";
 
 const roboto = Roboto({
@@ -25,9 +26,9 @@ const frankRuhlLibre = Frank_Ruhl_Libre({
   display: "swap",
 });
 
-export const metadata = {
-  title: "Alex Kio",
-  description: "My personal portfolio app",
+export const metadata: Metadata = {
+  title: "Epitome",
+  description: "A Next.js portfolio starter",
 };
 
 export default function RootLayout({
