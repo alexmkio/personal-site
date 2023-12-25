@@ -1,14 +1,14 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import Contact from "../components/contact/contact";
+import ContactComponent from "../components/contact/contact";
 
-const meta: Meta<typeof Contact> = {
+const meta: Meta<typeof ContactComponent> = {
   title: "Components/Contact",
-  component: Contact,
+  component: ContactComponent,
 };
 
 export default meta;
-type Story = StoryObj<typeof Contact>;
+type Story = StoryObj<typeof ContactComponent>;
 
-export const Default: Story = {
+export const Contact: Story = {
   args: {},
 };

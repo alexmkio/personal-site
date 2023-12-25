@@ -1,14 +1,14 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import SelectedWorks from "../components/selected-works/selected-works";
+import SelectedWorksComponent from "../components/selected-works/selected-works";
 
-const meta: Meta<typeof SelectedWorks> = {
+const meta: Meta<typeof SelectedWorksComponent> = {
   title: "Components/Selected Works",
-  component: SelectedWorks,
+  component: SelectedWorksComponent,
 };
 
 export default meta;
-type Story = StoryObj<typeof SelectedWorks>;
+type Story = StoryObj<typeof SelectedWorksComponent>;
 
-export const Default: Story = {
+export const SelectedWorks: Story = {
   args: {},
 };

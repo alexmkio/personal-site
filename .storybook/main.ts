@@ -8,12 +8,13 @@ const config: StorybookConfig = {
     "@storybook/addon-onboarding",
     "@storybook/addon-interactions",
     "storybook-addon-rtl",
-    "@storybook/addon-mdx-gfm"
+    "@storybook/addon-mdx-gfm",
   ],
   framework: {
     name: "@storybook/nextjs",
     options: {},
   },
+  staticDirs: ["../public"],
   docs: {
     autodocs: "tag",
   },

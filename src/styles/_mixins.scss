@@ -197,7 +197,7 @@
 // Typography
 
 @mixin section-heading {
-  font-family: var(--font-roboto), sans-serif;
+  font-family: $font-roboto;
   font-weight: 700;
   font-size: 1.7rem;
   line-height: 1.176;
@@ -234,7 +234,7 @@
 }
 
 @mixin section-desc {
-  font-family: var(--font-frank-ruhl-libre), serif;
+  font-family: $font-frank-ruhl-libre;
   font-size: 5.4rem;
   font-weight: 400;
   line-height: 1.259;
@@ -255,7 +255,7 @@
 }
 
 @mixin item-title {
-  font-family: var(--font-frank-ruhl-libre), serif;
+  font-family: $font-frank-ruhl-libre;
   font-size: 3.6rem;
   font-weight: 500;
   line-height: 1.222;
@@ -272,7 +272,7 @@
 }
 
 @mixin lead-paragraph {
-  font-family: var(--font-lora), serif;
+  font-family: $font-lora;
   font-weight: 300;
   font-size: 2.4rem;
   line-height: 1.833;

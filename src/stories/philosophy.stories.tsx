@@ -1,14 +1,14 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import Philosophy from "../components/philosophy/philosophy";
+import PhilosophyComponent from "../components/philosophy/philosophy";
 
-const meta: Meta<typeof Philosophy> = {
+const meta: Meta<typeof PhilosophyComponent> = {
   title: "Components/Philosophy",
-  component: Philosophy,
+  component: PhilosophyComponent,
 };
 
 export default meta;
-type Story = StoryObj<typeof Philosophy>;
+type Story = StoryObj<typeof PhilosophyComponent>;
 
-export const Default: Story = {
+export const Philosophy: Story = {
   args: {},
 };

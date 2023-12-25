@@ -19,7 +19,7 @@ body {
 
 body {
   background-color: $color-gray2;
-  font-family: var(--font-lora), serif;
+  font-family: $font-lora;
   font-size: 1.7rem;
   font-style: normal;
   font-weight: normal;
@@ -59,7 +59,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: var(--font-frank-ruhl-libre), serif;
+  font-family: $font-frank-ruhl-libre;
   font-weight: 500;
   font-style: normal;
   color: #000000;

@@ -1,6 +1,7 @@
 import type { Preview } from "@storybook/react";
 import { initializeRTL } from "storybook-addon-rtl";
 import "../src/styles/index.scss";
+import "./storybook.css";
 
 initializeRTL();
 
@@ -11,6 +12,25 @@ const preview: Preview = {
       matchers: {
         color: /(background|color)$/i,
         date: /Date$/i,
+      },
+    },
+    options: {
+      storySort: {
+        order: [
+          "Introduction",
+          "Components",
+          [
+            "Header",
+            "Intro",
+            "About",
+            "Philosophy",
+            "Selected Works",
+            "Carousel",
+            "Contact",
+            "Footer",
+          ],
+          "Page",
+        ],
       },
     },
   },
