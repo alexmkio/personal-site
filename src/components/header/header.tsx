@@ -22,6 +22,7 @@ export default function Header() {
               spy={true}
               smooth={true}
               duration={800}
+              onClick={handleClick}
             >
               Intro
             </ReactScrollLink>
@@ -34,6 +35,7 @@ export default function Header() {
               spy={true}
               smooth={true}
               duration={800}
+              onClick={handleClick}
             >
               About
             </ReactScrollLink>
@@ -46,6 +48,7 @@ export default function Header() {
               spy={true}
               smooth={true}
               duration={800}
+              onClick={handleClick}
             >
               Philosophy
             </ReactScrollLink>
@@ -58,6 +61,7 @@ export default function Header() {
               spy={true}
               smooth={true}
               duration={800}
+              onClick={handleClick}
             >
               Works
             </ReactScrollLink>
@@ -70,6 +74,7 @@ export default function Header() {
               spy={true}
               smooth={true}
               duration={800}
+              onClick={handleClick}
             >
               Say Hello
             </ReactScrollLink>
