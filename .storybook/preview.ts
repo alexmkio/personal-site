@@ -13,6 +13,25 @@ const preview: Preview = {
         date: /Date$/i,
       },
     },
+    options: {
+      storySort: {
+        order: [
+          "Introduction",
+          "Components",
+          [
+            "Header",
+            "Intro",
+            "About",
+            "Philosophy",
+            "Selected Works",
+            "Carousel",
+            "Contact",
+            "Footer",
+          ],
+          "Page",
+        ],
+      },
+    },
   },
 };
 
