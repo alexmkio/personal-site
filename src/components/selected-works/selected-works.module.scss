@@ -1,0 +1,240 @@
+@use "../../styles/mixins" as mixins;
+@use "../../styles/variables" as *;
+
+.selectedWorks {
+  padding-top: 19.2rem;
+  padding-bottom: 16rem;
+  background-color: #ffffff;
+
+  .headingRow {
+    @include mixins.row;
+    @include mixins.heading-block;
+    @include mixins.heading-block-center;
+  }
+
+  .headingColumn {
+    @include mixins.column;
+    @include mixins.large-full;
+  }
+
+  h2 {
+    @include mixins.section-heading;
+    @include mixins.section-heading-center-bottom;
+  }
+
+  .sectionDescription {
+    @include mixins.section-desc;
+  }
+
+  .masonry {
+    width: 89%;
+    max-width: 1400px;
+    margin-top: 11.2rem;
+    margin-inline-end: auto;
+    margin-inline-start: auto;
+    columns: 2;
+    column-gap: 6rem;
+  }
+
+  .brick {
+    background: #ec985a;
+    color: white;
+    margin-block-start: 0;
+    margin-inline-end: 1rem;
+    margin-block-end: 1rem;
+    margin-inline-start: 0;
+    width: 100%;
+    margin-bottom: 6rem;
+    text-align: center;
+    padding: 60px;
+    background-color: #efefef;
+  }
+
+  .thumb {
+    position: relative;
+    overflow: hidden;
+
+    a {
+      display: block;
+      position: relative;
+
+      &::before,
+      &::after {
+        transition: all 0.5s ease-in-out;
+      }
+
+      &::before {
+        display: block;
+        content: "";
+        background-color: rgba(0, 0, 0, 0.7);
+        position: absolute;
+        top: 0;
+        inset-inline-start: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        visibility: hidden;
+      }
+
+      &::after {
+        display: block;
+        content: "";
+        width: 3.6rem;
+        height: 3.6rem;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 80%;
+        background-image: url(/assets/icons/icon-plus.svg);
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transform: translate3d(-50%, -50%, 0);
+        transform: translate3d(-50%, -50%, 0);
+        z-index: 2;
+        position: absolute;
+        top: 50%;
+        inset-inline-start: 50%;
+      }
+    }
+
+    img {
+      vertical-align: bottom;
+    }
+
+    &:hover {
+      a {
+        &::before,
+        &::after {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+  }
+
+  .text,
+  .title,
+  .subtitle {
+    display: inline-block;
+  }
+
+  .text {
+    margin-top: 8.92%;
+  }
+
+  .title,
+  .subtitle {
+    font-family: var(--font-roboto), sans-serif;
+    font-size: 1.7rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 2rem;
+  }
+
+  .title {
+    font-weight: 500;
+    color: #000000;
+  }
+
+  .subtitle {
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.7);
+
+    &::before {
+      content: "-";
+      margin: 0 0.4rem;
+    }
+  }
+
+  @include mixins.breakpoint-down($breakpoint-1200) {
+    .masonry {
+      column-gap: 48px;
+    }
+
+    .brick {
+      margin-bottom: 48px;
+    }
+
+    .thumb {
+      a {
+        &::after {
+          width: 3rem;
+          height: 3rem;
+        }
+      }
+    }
+
+    .title,
+    .subtitle {
+      font-size: 1.5rem;
+    }
+  }
+
+  @include mixins.breakpoint-down($breakpoint-1024) {
+    .masonry {
+      column-gap: 40px;
+    }
+
+    .brick {
+      margin-bottom: 40px;
+    }
+  }
+
+  @include mixins.breakpoint-down($breakpoint-900) {
+    .masonry {
+      column-gap: 32px;
+    }
+
+    .brick {
+      margin-bottom: 32px;
+    }
+  }
+
+  @include mixins.breakpoint-down($breakpoint-800) {
+    padding-top: 16rem;
+
+    .masonry {
+      margin-top: 7.2rem;
+      columns: 1;
+    }
+
+    .brick {
+      margin-bottom: 60px;
+    }
+
+    .thumb {
+      a {
+        &::after {
+          width: 3.6rem;
+          height: 3.6rem;
+        }
+      }
+    }
+
+    .title,
+    .subtitle {
+      font-size: 1.7rem;
+    }
+  }
+
+  @include mixins.breakpoint-down($breakpoint-600) {
+    .masonry {
+      width: auto;
+      padding-inline-start: 25px;
+      padding-inline-end: 25px;
+    }
+
+    .thumb {
+      a {
+        &::after {
+          width: 3rem;
+          height: 3rem;
+        }
+      }
+    }
+
+    .title,
+    .subtitle {
+      font-size: 1.5rem;
+    }
+  }
+}

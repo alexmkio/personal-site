@@ -1,4 +1,4 @@
-import "@styles/index.scss";
+import "../styles/index.scss";
 import { Metadata } from "next";
 import { Roboto, Lora, Frank_Ruhl_Libre } from "next/font/google";
 

@@ -1,0 +1,192 @@
+@use "../../styles/mixins" as mixins;
+@use "../../styles/variables" as *;
+
+.contact {
+  padding-top: 18.4rem;
+  padding-bottom: 6.4rem;
+  background-color: #050505;
+
+  .headingRow {
+    @include mixins.row;
+    @include mixins.heading-block;
+  }
+
+  .headingColumn {
+    @include mixins.column;
+    @include mixins.large-full;
+  }
+
+  h2 {
+    @include mixins.section-heading;
+    color: #ffffff;
+  }
+
+  .mainRow {
+    @include mixins.row;
+
+    a {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      display: inline-block;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: #cf1767;
+        border-bottom: 1px solid white;
+      }
+    }
+  }
+
+  .email {
+    font-family: var(--font-roboto), sans-serif;
+    font-size: 11.2rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 5.6rem 0 8rem;
+  }
+
+  .mainColumn {
+    @include mixins.column;
+    @include mixins.large-full;
+  }
+
+  .description {
+    @include mixins.section-desc;
+    color: #ffffff;
+  }
+
+  .infos {
+    @include mixins.row;
+
+    margin-top: 12.8rem;
+    font-family: var(--font-frank-ruhl-libre), serif;
+    font-weight: 400;
+    font-size: 4.2rem;
+    line-height: 1.333;
+
+    .socialInfo,
+    .professionalInfo {
+      margin-bottom: 1.6rem;
+    }
+
+    a {
+      color: #ffffff;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: #cf1767;
+      }
+    }
+  }
+
+  .socialInfo {
+    @include mixins.column;
+    @include mixins.large-5;
+    @include mixins.medium-full;
+  }
+
+  .professionalInfo {
+    @include mixins.column;
+    @include mixins.large-7;
+    @include mixins.medium-full;
+  }
+
+  h3 {
+    font-family: var(--font-roboto), sans-serif;
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 1.333;
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+    color: rgba(255, 255, 255, 0.35);
+  }
+
+  ul {
+    list-style: none;
+    margin-inline-start: 0;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+  }
+
+  li {
+    padding-inline-start: 0;
+
+    &:not(:first-child):before {
+      content: "/";
+      color: #ffffff;
+      margin-inline-start: 4px;
+      margin-inline-end: 4px;
+    }
+  }
+
+  @include mixins.breakpoint-down($breakpoint-1300) {
+    .email {
+      font-size: 10rem;
+    }
+
+    .infos {
+      font-size: 4rem;
+    }
+
+    h3 {
+      font-size: 2rem;
+    }
+  }
+
+  @include mixins.breakpoint-down($breakpoint-1200) {
+    .email {
+      font-size: 9rem;
+    }
+
+    .infos {
+      font-size: 9.6rem;
+    }
+  }
+
+  @include mixins.breakpoint-down($breakpoint-1024) {
+    .email {
+      font-size: 7.2rem;
+    }
+
+    .infos {
+      font-size: 3.8rem;
+    }
+
+    h3 {
+      font-size: 1.8rem;
+    }
+  }
+
+  @include mixins.breakpoint-down($breakpoint-800) {
+    padding-top: 16rem;
+
+    .email {
+      font-size: 9vw;
+    }
+
+    .infos {
+      font-size: 3.6rem;
+    }
+  }
+
+  @include mixins.breakpoint-down($breakpoint-600) {
+    li {
+      margin-inline-end: 1.2rem;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  @include mixins.breakpoint-down($breakpoint-400) {
+    .infos {
+      font-size: 3rem;
+    }
+  }
+}
