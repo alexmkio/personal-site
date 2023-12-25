@@ -123,7 +123,7 @@
       content: counter(ctr, decimal-leading-zero) ".";
       counter-increment: ctr;
       margin-bottom: 4.8rem;
-      font-family: var(--font-roboto), sans-serif;
+      font-family: $font-roboto;
       font-weight: 300;
       font-size: 8rem;
       line-height: 1;

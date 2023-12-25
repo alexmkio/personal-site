@@ -2,7 +2,7 @@
 @use "../../styles/variables" as *;
 
 .footer {
-  font-family: var(--font-roboto), sans-serif;
+  font-family: $font-roboto;
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 2;
