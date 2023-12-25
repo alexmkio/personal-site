@@ -4,16 +4,9 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import { motion } from "framer-motion";
 import styles from "./slider.module.scss";
+import { animationOptions } from "../../utils/constants";
 
-const easeInSine = [0.47, 0, 0.745, 0.715];
-const animationOptions = {
-  initial: { opacity: 0, y: 200 },
-  whileInView: { opacity: 1, y: 0 },
-  viewport: { once: true },
-  transition: { duration: 0.6, ease: easeInSine, delay: 0.3 },
-};
-
-export default class SimpleSlider extends Component {
+export default class Carousel extends Component {
   render() {
     const settings = {
       arrows: false,

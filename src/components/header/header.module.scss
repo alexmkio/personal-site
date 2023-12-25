@@ -1,6 +1,6 @@
-@use "@styles/colors" as *;
-@use "@styles/mixins" as mixins;
-@use "@styles/variables" as *;
+@use "../../styles/colors" as *;
+@use "../../styles/mixins" as mixins;
+@use "../../styles/variables" as *;
 
 .header {
   margin-block-start: 2rem;
