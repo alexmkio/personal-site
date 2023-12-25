@@ -24,8 +24,8 @@ export default function SelectedWorks() {
               <Link href="#intro">
                 <Image
                   src="/assets/images/city-building.jpg"
-                  width={500}
-                  height={500}
+                  width={600}
+                  height={600}
                   alt="alt text"
                 />
               </Link>
@@ -42,8 +42,8 @@ export default function SelectedWorks() {
               <Link href="#intro">
                 <Image
                   src="/assets/images/the-beetle.jpg"
-                  width={500}
-                  height={500}
+                  width={600}
+                  height={600}
                   alt="alt text"
                 />
               </Link>
@@ -60,8 +60,8 @@ export default function SelectedWorks() {
               <Link href="#intro">
                 <Image
                   src="/assets/images/lamp.jpg"
-                  width={500}
-                  height={500}
+                  width={600}
+                  height={600}
                   alt="alt text"
                 />
               </Link>
@@ -78,8 +78,8 @@ export default function SelectedWorks() {
               <Link href="#intro">
                 <Image
                   src="/assets/images/woodcraft.jpg"
-                  width={500}
-                  height={500}
+                  width={600}
+                  height={600}
                   alt="alt text"
                 />
               </Link>
@@ -96,8 +96,8 @@ export default function SelectedWorks() {
               <Link href="#intro">
                 <Image
                   src="/assets/images/shutterbug.jpg"
-                  width={500}
-                  height={500}
+                  width={600}
+                  height={600}
                   alt="alt text"
                 />
               </Link>
@@ -114,8 +114,8 @@ export default function SelectedWorks() {
               <Link href="#intro">
                 <Image
                   src="/assets/images/fuji.jpg"
-                  width={500}
-                  height={500}
+                  width={600}
+                  height={600}
                   alt="alt text"
                 />
               </Link>
