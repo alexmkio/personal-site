@@ -1,34 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Epitome - Next.js Portfolio Template
 
-## Getting Started
+[Deployment](https://epitome-khaki.vercel.app/)
 
-First, run the development server:
+[Storybook](https://alexmkio.github.io/epitome/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Overview
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Epitome** is a modern and dynamic personal portfolio website template originally designed by [StyleShout](https://styleshout.com/free-templates/epitome/). This project represents a comprehensive refactoring effort, transforming the original vanilla JS application into a sleek and efficient [Next.js](https://nextjs.org/)-powered experience.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Key Features
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Enhanced Animation**: Leveraging [Framer Motion](https://www.framer.com/motion/), Epitome delivers a seamless and engaging animate-on-scroll experience.
+- **Smooth Scrolling**: Integration of [react-scroll](https://github.com/fisshy/react-scroll) ensures a polished and fluid scrolling behavior for an improved user journey.
+- **Dynamic Carousel**: The SlickSlider carousel functionality, powered by [react-slick](https://github.com/akiran/react-slick), adds a captivating element to showcase your content.
 
-## Learn More
+## Motivation
 
-To learn more about Next.js, take a look at the following resources:
+My motivation for embarking on this project stemmed from the desire to revamp my personal website. While impressed with the StyleShout template, I aimed to create a platform that not only reflected my personal style but also embodied my development philosophy. The core structure of the template remains untouched, allowing users the flexibility to fork it for their unique needs. If you choose to do so, consider supporting the original designers at [StyleShout](https://styleshout.com/free-templates/epitome/).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Future Enhancements
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- **Test Coverage**: Strengthening the codebase with comprehensive testing.
+- **Continuous Integration (CI)**: Implementing CI pipelines for seamless development workflows.
+- **Lighthouse Testing**: Ensuring optimal performance and accessibility standards.
+- **Header Enhancements**: Adding a logo and social icon section for a personalized touch.
+- **Interactive Features**: Implementing popup functionality for the "Selected Works" section.
+- **Library Migration**: Exploring the possibility of migrating to [swiper](https://swiperjs.com/) in place of [react-slick](https://github.com/akiran/react-slick).
 
-## Deploy on Vercel
+Feel free to explore [the issue board](https://github.com/alexmkio/epitome/issues) for more insights into upcoming enhancements and contribute to the evolution of Epitome.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contributors
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This application was built by [Alex Kio](https://www.linkedin.com/in/alexkio/).
