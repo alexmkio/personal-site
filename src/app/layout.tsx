@@ -1,27 +1,5 @@
 import "../styles/index.scss";
 import { Metadata } from "next";
-import { Roboto, Lora, Frank_Ruhl_Libre } from "next/font/google";
-
-const roboto = Roboto({
-  weight: ["400", "500", "700"],
-  style: ["normal"],
-  subsets: ["latin"],
-  display: "swap",
-});
-
-const lora = Lora({
-  weight: ["400"],
-  style: ["normal"],
-  subsets: ["latin"],
-  display: "swap",
-});
-
-const frankRuhlLibre = Frank_Ruhl_Libre({
-  weight: ["400", "500"],
-  style: ["normal"],
-  subsets: ["latin"],
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   title: "Epitome",
@@ -35,11 +13,19 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className={`${roboto.className} ${lora.className} ${frankRuhlLibre.className}`}
-      >
-        {children}
-      </body>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500&family=Lora&family=Roboto:wght@400;500;700&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body>{children}</body>
     </html>
   );
 }
