@@ -10,6 +10,6 @@ $breakpoint-1200: 1200px;
 $breakpoint-1300: 1300px;
 $breakpoint-1400: 1400px;
 
-$font-roboto: Roboto, sans-serif;
-$font-lora: Lora, serif;
-$font-frank-ruhl-libre: Frank Ruhl Libre, serif;
+$font-roboto: var(--font-roboto), sans-serif;
+$font-lora: var(--font-lora), serif;
+$font-frank-ruhl-libre: var(--font-frank-ruhl-libre), serif;

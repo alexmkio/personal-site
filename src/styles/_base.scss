@@ -19,7 +19,7 @@ body {
 
 body {
   background-color: $color-gray2;
-  font-family: $font-lora;
+  font-family: $font-lora !important;
   font-size: 1.7rem;
   font-style: normal;
   font-weight: normal;
@@ -116,6 +116,8 @@ h4 {
 
 p {
   margin-bottom: 3.2rem;
+  font-size: inherit;
+  text-rendering: optimizeLegibility;
 }
 
 button {
