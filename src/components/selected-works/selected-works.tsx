@@ -23,7 +23,7 @@ export default function SelectedWorks() {
             <div className={styles.thumb}>
               <Link href="#intro">
                 <Image
-                  src="/assets/images/city-building.jpg"
+                  src="/assets/images/city-building.webp"
                   width={600}
                   height={600}
                   alt="alt text"
@@ -41,7 +41,7 @@ export default function SelectedWorks() {
             <div className={styles.thumb}>
               <Link href="#intro">
                 <Image
-                  src="/assets/images/the-beetle.jpg"
+                  src="/assets/images/the-beetle.webp"
                   width={600}
                   height={600}
                   alt="alt text"
@@ -59,7 +59,7 @@ export default function SelectedWorks() {
             <div className={styles.thumb}>
               <Link href="#intro">
                 <Image
-                  src="/assets/images/lamp.jpg"
+                  src="/assets/images/lamp.webp"
                   width={600}
                   height={600}
                   alt="alt text"
@@ -77,7 +77,7 @@ export default function SelectedWorks() {
             <div className={styles.thumb}>
               <Link href="#intro">
                 <Image
-                  src="/assets/images/woodcraft.jpg"
+                  src="/assets/images/woodcraft.webp"
                   width={600}
                   height={600}
                   alt="alt text"
@@ -95,7 +95,7 @@ export default function SelectedWorks() {
             <div className={styles.thumb}>
               <Link href="#intro">
                 <Image
-                  src="/assets/images/shutterbug.jpg"
+                  src="/assets/images/shutterbug.webp"
                   width={600}
                   height={600}
                   alt="alt text"
@@ -113,7 +113,7 @@ export default function SelectedWorks() {
             <div className={styles.thumb}>
               <Link href="#intro">
                 <Image
-                  src="/assets/images/fuji.jpg"
+                  src="/assets/images/fuji.webp"
                   width={600}
                   height={600}
                   alt="alt text"

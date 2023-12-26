@@ -48,7 +48,7 @@ export default class Carousel extends Component {
               </p>
               <div className={styles.info}>
                 <Image
-                  src="/assets/images/user-01.jpg"
+                  src="/assets/images/user-01.webp"
                   width={300}
                   height={300}
                   alt="Author image"
@@ -69,7 +69,7 @@ export default class Carousel extends Component {
               </p>
               <div className={styles.info}>
                 <Image
-                  src="/assets/images/user-02.jpg"
+                  src="/assets/images/user-02.webp"
                   width={300}
                   height={300}
                   alt="Author image"
@@ -91,7 +91,7 @@ export default class Carousel extends Component {
               </p>
               <div className={styles.info}>
                 <Image
-                  src="/assets/images/user-03.jpg"
+                  src="/assets/images/user-03.webp"
                   width={300}
                   height={300}
                   alt="Author image"
