@@ -11,7 +11,8 @@ export default function Philosophy() {
         <div className={styles.headingColumn}>
           <h2>Development Philosophy</h2>
           <p className={styles.sectionDescription}>
-            My passion and goal is to help you make your business standout.
+            I am passionate about creating engaging and accessible software that
+            is scalable, performant, and robust.
           </p>
         </div>
       </motion.div>

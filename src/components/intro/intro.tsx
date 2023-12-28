@@ -7,11 +7,11 @@ export default function Intro() {
     <ReactScrollElement name="intro" className={styles.intro}>
       <div className={styles.introContent}>
         <div className={styles.introText}>
-          <h1>Hello, I'm John Doe</h1>
+          <h1>Hello, I'm Alex Kio</h1>
           <h2>
-            Digital Designer <br />
-            and Web Developer <br />
-            Based In Somewhere.
+            Web Developer
+            <br />
+            Based In Florida
           </h2>
         </div>
         <div className={styles.introScroll}>
