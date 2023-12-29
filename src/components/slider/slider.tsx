@@ -1,4 +1,5 @@
 "use client";
+import { Element as ReactScrollElement } from "react-scroll";
 import Image from "next/image";
 import Slider from "react-slick";
 import { motion } from "framer-motion";
@@ -33,7 +34,7 @@ export default function Carousel() {
     ),
   };
   return (
-    <section className={styles.testimonials}>
+    <ReactScrollElement name="testimonials" className={styles.testimonials}>
       <motion.div className={styles.headingRow} {...animationOptions}>
         <Slider {...settings} className={styles.headingColumn}>
           <article>
@@ -130,6 +131,6 @@ export default function Carousel() {
           </article>
         </Slider>
       </motion.div>
-    </section>
+    </ReactScrollElement>
   );
 }

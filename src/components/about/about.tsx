@@ -168,12 +168,12 @@ export default function About() {
                   My responsibilities encompassed the comprehensive design of a
                   startup clinical pathology clinic, involving the creation of a
                   networked office suite that interfaced clinical equipment with
-                  the Schuylab Laboratory Information System. Additionally, I
-                  developed a secure and responsive company website, deployed a
-                  locally-hosted PBX telephony system, and customized Vtiger
-                  Customer Relationship Management (CRM) software to facilitate
-                  inventory management, scheduling, invoicing, and marketing. I
-                  also designed courier service routes and procedure manuals for
+                  a Laboratory Information System. Additionally, I developed a
+                  secure and responsive company website, deployed a
+                  locally-hosted PBX system, and customized Vtiger Customer
+                  Relationship Management (CRM) software to facilitate inventory
+                  management, scheduling, invoicing, and marketing. I also
+                  designed courier service routes and procedure manuals for
                   streamlined operational efficiency.
                 </p>
               </div>

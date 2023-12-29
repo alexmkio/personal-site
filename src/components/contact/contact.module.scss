@@ -119,8 +119,8 @@
     &:not(:first-child):before {
       content: "/";
       color: #ffffff;
-      margin-inline-start: 4px;
-      margin-inline-end: 4px;
+      margin-inline-start: 8px;
+      margin-inline-end: 8px;
     }
   }
 

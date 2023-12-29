@@ -20,7 +20,7 @@ export default function Contact() {
           </p>
           <p className={styles.description}>
             I'm happy to connect, listen and help. Let's work together and build
-            something awesome. Let's turn your idea to an even greater product.{" "}
+            something awesome.{" "}
             <a href="mailto:me@alexkio.com" target="_blank">
               Email Me
             </a>

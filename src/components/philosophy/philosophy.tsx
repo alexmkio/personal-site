@@ -22,12 +22,13 @@ export default function Philosophy() {
           {...animationOptions}
         >
           <div className={styles.philosophyItemContent}>
-            <h3>Brand Identity</h3>
+            <h3>Collaborative</h3>
             <p>
-              Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur
-              sit vel illum vel et a delectus. Vel sequi vitae voluptatem
-              perspiciatis eligendi. Voluptatibus optio natus asperiores est
-              commodi amet quia architecto. Dolores necessitatibus et.
+              I firmly believe that the cornerstone of any project's success
+              lies in the art of effective communication and collaboration. I
+              show up to every Agile ceremony prepared and engaged, am readily
+              available to my team, and I consistently advocate for both the
+              client and my peers.
             </p>
           </div>
         </motion.div>
@@ -36,12 +37,13 @@ export default function Philosophy() {
           {...animationOptions}
         >
           <div className={styles.philosophyItemContent}>
-            <h3>Illustration</h3>
+            <h3>Accessible</h3>
             <p>
-              Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur
-              sit vel illum vel et a delectus. Vel sequi vitae voluptatem
-              perspiciatis eligendi. Voluptatibus optio natus asperiores est
-              commodi amet quia architecto. Dolores necessitatibus et.
+              Companies that prioritize accessibility demonstrate social
+              responsibility and inclusivity. Using semantic HTML, incorporating
+              ARIA roles and attributes where applicable, providing focus
+              states, and ensuring ample color contrast are some of the ways
+              that I ensure my applications are accessible to all users
             </p>
           </div>
         </motion.div>
@@ -50,12 +52,13 @@ export default function Philosophy() {
           {...animationOptions}
         >
           <div className={styles.philosophyItemContent}>
-            <h3>Web Design</h3>
+            <h3>Scalable</h3>
             <p>
-              Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur
-              sit vel illum vel et a delectus. Vel sequi vitae voluptatem
-              perspiciatis eligendi. Voluptatibus optio natus asperiores est
-              commodi amet quia architecto. Dolores necessitatibus et.
+              Writing modular code ensures that a codebase remains maintainable,
+              adaptable, and efficient as a project grows. Employing a
+              component-based architecture and upholding principles such as
+              "Don't Repeat Yourself" (DRY) and the Single Responsibility
+              Principle are key strategies I employ to achieve this goal.
             </p>
           </div>
         </motion.div>
@@ -64,12 +67,14 @@ export default function Philosophy() {
           {...animationOptions}
         >
           <div className={styles.philosophyItemContent}>
-            <h3>Product Strategy</h3>
+            <h3>Performant</h3>
             <p>
-              Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur
-              sit vel illum vel et a delectus. Vel sequi vitae voluptatem
-              perspiciatis eligendi. Voluptatibus optio natus asperiores est
-              commodi amet quia architecto. Dolores necessitatibus et.
+              Optimized code directly impacts the user experience and search
+              engine visibility leading to increased conversion rates.
+              Minimizing HTTP requests, incorporating SSR, SSG, and ISR when
+              applicable, leveraging SWR, optimizing assets, writing efficient
+              CSS, code splitting and minification all contribute to these
+              positive outcomes.
             </p>
           </div>
         </motion.div>
@@ -78,12 +83,12 @@ export default function Philosophy() {
           {...animationOptions}
         >
           <div className={styles.philosophyItemContent}>
-            <h3>UI/UX Design</h3>
+            <h3>Tested</h3>
             <p>
-              Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur
-              sit vel illum vel et a delectus. Vel sequi vitae voluptatem
-              perspiciatis eligendi. Voluptatibus optio natus asperiores est
-              commodi amet quia architecto. Dolores necessitatibus et.
+              Tests provide confidence in code correctness, save time and costs,
+              contribute to project scalability, and serve as living
+              documentation. Additionally, they play a crucial role in
+              preventing regressions and assuring a positive user experience.
             </p>
           </div>
         </motion.div>
@@ -92,12 +97,12 @@ export default function Philosophy() {
           {...animationOptions}
         >
           <div className={styles.philosophyItemContent}>
-            <h3>Mobile Design</h3>
+            <h3>Responsive</h3>
             <p>
-              Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur
-              sit vel illum vel et a delectus. Vel sequi vitae voluptatem
-              perspiciatis eligendi. Voluptatibus optio natus asperiores est
-              commodi amet quia architecto. Dolores necessitatibus et.
+              Responsive design anticipates and accommodates the diversity of
+              devices, future-proofing websites and applications. This ensures a
+              consistent and positive user experience across various devices and
+              screen sizes.
             </p>
           </div>
         </motion.div>

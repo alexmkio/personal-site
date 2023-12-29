@@ -57,13 +57,13 @@ export default function Header() {
             <ReactScrollLink
               activeClass="active"
               className={styles.link}
-              to="works"
+              to="testimonials"
               spy={true}
               smooth={true}
               duration={800}
               onClick={handleClick}
             >
-              Works
+              Testimonials
             </ReactScrollLink>
           </li>
           <li>
