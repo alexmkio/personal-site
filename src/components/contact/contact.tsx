@@ -14,14 +14,14 @@ export default function Contact() {
       <motion.div className={styles.mainRow} {...animationOptions}>
         <div className={styles.mainColumn}>
           <p className={styles.email}>
-            <a href="mailto:#0" target="_blank">
-              hello@epitome.com
+            <a href="mailto:me@alexkio.com" target="_blank">
+              me@alexkio.com
             </a>
           </p>
           <p className={styles.description}>
             I'm happy to connect, listen and help. Let's work together and build
-            something awesome. Let's turn your idea to an even greater product.{" "}
-            <a href="mailto:#0" target="_blank">
+            something awesome.{" "}
+            <a href="mailto:me@alexkio.com" target="_blank">
               Email Me
             </a>
             .
@@ -29,26 +29,17 @@ export default function Contact() {
         </div>
       </motion.div>
       <motion.div className={styles.infos} {...animationOptions}>
-        <div className={styles.socialInfo}>
-          <h3>Call Me</h3>
-          <a href="tel:197-543-2345">+197 543 2345</a>
-        </div>
         <div className={styles.professionalInfo}>
-          <h3>Social</h3>
+          <h3>Links</h3>
           <ul>
             <li>
-              <a href="#0" title="Facebook">
-                Facebook
+              <a href="https://www.linkedin.com/in/alexkio/" target="_blank">
+                LinkedIn
               </a>
             </li>
             <li>
-              <a href="#0" title="Twitter">
-                Twitter
-              </a>
-            </li>
-            <li>
-              <a href="#0" title="Instagram">
-                Instagram
+              <a href="https://github.com/alexmkio" target="_blank">
+                GitHub
               </a>
             </li>
           </ul>

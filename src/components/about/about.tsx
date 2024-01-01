@@ -2,6 +2,8 @@ import styles from "./about.module.scss";
 import { Element as ReactScrollElement } from "react-scroll";
 import { motion } from "framer-motion";
 import { animationOptions } from "../../utils/constants";
+import { Link as ReactScrollLink } from "react-scroll";
+import Link from "next/link";
 
 export default function About() {
   return (
@@ -15,47 +17,63 @@ export default function About() {
         <motion.div className={styles.aboutMeRow} {...animationOptions}>
           <div className={styles.aboutMeColumn}>
             <p>
-              Nulla aspernatur nam et accusantium. Tempore delectus dignissimos
-              aut ab commodi. Labore et cupiditate temporibus odio debitis
-              eaque. Officia provident aut iste et dicta perferendis. Velit iure
-              adipisci. Molestiae qui fuga rerum facilis.
+              I am a compassionate and forward-thinking software engineer,
+              driven by a passion for problem-solving. Whether backpacking
+              across mountain ranges or navigating the dynamic landscape of
+              software engineering, I consistently embrace opportunities for
+              growth and learning.
             </p>
             <p>
-              Reprehenderit quia id facilis nihil odit perferendis fugiat quidem
-              voluptas. Non ratione tenetur. Quis earum quia deleniti fugit
-              fugiat minus omnis. Iure dolore dolorum. Aspernatur quos cumque ea
-              dolorum nemo nihil beatae magnam. Qui molestiae rem. Maxime enim
-              provident ipsum reprehenderit tenetur. Et cupiditate repellendus.
-              Et modi ipsum aut harum. Ratione alias.
+              Having graduated from the University of Florida in 2009 with a
+              Bachelor of Arts in Political Science, I transitioned into a
+              career as a software developer by completing the certificate
+              program in Front-End Engineering at the Turing School of Software
+              and Design. Proficient in Test-Driven Development, HTML, CSS,
+              JavaScript, TypeScript, and React, I am committed to delivering
+              well-tested, responsive, and accessible web experiences.
             </p>
             <p>
-              Rerum consequatur dolore quae. Qui excepturi facilis quam quae
-              quasi. Mollitia occaecati minus voluptas veniam. Qui excepturi
-              facilis quam quae quasi. Mollitia occaecati minus voluptas veniam.
-              Est est occaecati dolor qui aut et eum. Aspernatur quos cumque ea
-              dolorum nemo nihil beatae magnam. Qui molestiae rem.
+              In my current role as a Developer at Rightpoint, I have played a
+              pivotal role in diverse projects, including the Iron Mountain
+              website redesign and the development of the Ogletree Deakins
+              client portal. My expertise spans Next.js, Storybook, Radix,
+              Framer Motion, Contentful, React Hook Form with Yup, React Query,
+              and more, reflecting a commitment to staying at the forefront of
+              cutting-edge technologies.
             </p>
             <p>
-              Maxime enim provident ipsum reprehenderit tenetur. Et cupiditate
-              repellendus. Et modi ipsum aut harum. Ratione alias sed. Rerum
-              consequatur dolore quae. Qui excepturi facilis quam quae quasi.
-              Mollitia occaecati minus voluptas veniam. Est est occaecati dolor
-              qui aut et eum. Aspernatur quos cumque ea dolorum nemo nihil
-              beatae magnam. Qui molestiae rem. Aspernatur quos cumque ea
-              dolorum nemo nihil. Qui molestiae rem.
+              What I find most exhilarating about software engineering is the
+              infinite array and variety of challenges that present themselves.
+              I thrive on breaking down complex problems into manageable
+              components and chipping away until a solution emerges. Currently I
+              {"'"}m pursuing a certification with Contentful and expanding my
+              skills in React Native, Ruby, and Go. I am excited about the
+              endless possibilities that lie ahead in this ever-evolving field.
+              Let's connect and explore how we can create impactful and
+              innovative solutions together.
             </p>
           </div>
         </motion.div>
         <div className={styles.aboutMeButtons}>
           <motion.div {...animationOptions}>
-            <a href="#0" className={styles.btnStroke}>
-              Hire Me
-            </a>
+            <ReactScrollLink
+              className={styles.btnStroke}
+              to="contact"
+              spy={true}
+              smooth={true}
+              duration={800}
+            >
+              Contact Me
+            </ReactScrollLink>
           </motion.div>
           <motion.div {...animationOptions}>
-            <a href="#0" className={styles.btnPrimary}>
-              Download CV
-            </a>
+            <Link
+              href="/Alex_Kio_Resume.pdf"
+              target="_blank"
+              className={styles.btnPrimary}
+            >
+              View CV
+            </Link>
           </motion.div>
         </div>
       </div>
@@ -75,48 +93,88 @@ export default function About() {
               <div className={styles.block}>
                 <div className={styles.bullet}></div>
                 <div className={styles.header}>
-                  <p className={styles.timeframe}>July 2018 - Present</p>
-                  <h3 className={styles.name}>Awesome Studio</h3>
-                  <h4>Lead Designer</h4>
+                  <p className={styles.timeframe}>January 2022 - Present</p>
+                  <h3 className={styles.name}>Rightpoint</h3>
+                  <h4>Software Developer</h4>
                 </div>
+                <p className={styles.timeframe}>June 2023 - Present</p>
                 <p>
-                  Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in
-                  magna consectetur nisi cupidatat laboris esse eiusmod deserunt
-                  aute do quis velit esse sed Ut proident cupidatat nulla esse
-                  cillum laborum occaecat nostrud sit dolor incididunt amet est
-                  occaecat nisi.
+                  <a
+                    href="https://www.rightpoint.com/work/iron-mountain"
+                    target="_blank"
+                  >
+                    Iron Mountain website redesign
+                  </a>
+                  . We're creating a large component library using Next.js,
+                  Storybook, and Framer Motion. This library will be consumed by
+                  an instance of Sitecore Experience Manager and deployed across
+                  sixty international websites, some of which feature
+                  right-to-left orientation.
+                </p>
+                <p className={styles.timeframe}>January 2023 - June 2023</p>
+                <p>
+                  <a
+                    href="https://ogletree.com/media-center/press-releases/2023-08-21/ogletree-deakins-unveils-client-portal/"
+                    target="_blank"
+                  >
+                    Ogletree Deakins' secure client portal
+                  </a>
+                  . A Next.js application utilizing Contentful CMS, NextAuth,
+                  RTL & Jest, Sass, React Hook Form with Yup, React Table
+                  (Tanstack), React Query w/ Axios, & Radix UI components to
+                  deliver a secure front door to the firm{"'"}s valuable
+                  client-facing tools and content.
+                </p>
+                <p className={styles.timeframe}>
+                  February 2022 - December 2022
+                </p>
+                <p>
+                  Talent support role on{" "}
+                  <a href="https://www.unqork.com/" target="_blank">
+                    Unqork
+                  </a>
+                  's Design Services team. Unqork is a "no-code" application
+                  development solution used by the likes of Goldman Sachs,
+                  Liberty Mutual, and the Cities of New York, Chicago and
+                  Washington DC.
                 </p>
               </div>
 
               <div className={styles.block}>
                 <div className={styles.bullet}></div>
                 <div className={styles.header}>
-                  <p className={styles.timeframe}>July 2017 - June 2018</p>
-                  <h3 className={styles.name}>Super Cool Agency</h3>
-                  <h4>Frontend Developer</h4>
+                  <p className={styles.timeframe}>December 2017 - March 2021</p>
+                  <h3 className={styles.name}>University of Florida</h3>
+                  <h4>Manager of Operations</h4>
                 </div>
                 <p>
-                  Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in
-                  magna consectetur nisi cupidatat laboris esse eiusmod deserunt
-                  aute do quis velit esse sed Ut proident cupidatat nulla esse
-                  cillum laborum occaecat nostrud sit dolor incididunt amet est
-                  occaecat nisi.
+                  I was responsible for overseeing the daily operations of
+                  several National Institutes of Health (NIH) programs, which
+                  included assisting in process development and refinement,
+                  creating SOPs and procedure manuals, training employees,
+                  conducting quality-control audits, handling client services,
+                  and inventory management.
                 </p>
               </div>
 
               <div className={styles.block}>
                 <div className={styles.bullet}></div>
                 <div className={styles.header}>
-                  <p className={styles.timeframe}>March 2016 - June 2017</p>
-                  <h3 className={styles.name}>Epic Design Studio</h3>
-                  <h4>Frontend Developer</h4>
+                  <p className={styles.timeframe}>June 2016 - November 2017</p>
+                  <h3 className={styles.name}>Rocky Mountain Labs</h3>
+                  <h4>Laboratory Support Specialist</h4>
                 </div>
                 <p>
-                  Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in
-                  magna consectetur nisi cupidatat laboris esse eiusmod deserunt
-                  aute do quis velit esse sed Ut proident cupidatat nulla esse
-                  cillum laborum occaecat nostrud sit dolor incididunt amet est
-                  occaecat nisi.
+                  My responsibilities encompassed the comprehensive design of a
+                  startup clinical pathology clinic, involving the creation of a
+                  networked office suite that interfaced clinical equipment with
+                  a Laboratory Information System. Additionally, I developed a
+                  secure and responsive company website, deployed a
+                  locally-hosted PBX system, and customized Vtiger Customer
+                  Relationship Management (CRM) software to facilitate inventory
+                  management, scheduling, invoicing, and marketing. I also
+                  designed courier service routes and procedure manuals for
+                  streamlined operational efficiency.
                 </p>
               </div>
             </div>
@@ -131,48 +189,46 @@ export default function About() {
               <div className={styles.block}>
                 <div className={styles.bullet}></div>
                 <div className={styles.header}>
-                  <p className={styles.timeframe}>July 2011 - June 2015</p>
-                  <h3 className={styles.name}>University of Life</h3>
-                  <h4>Master Degree</h4>
+                  <p className={styles.timeframe}>March 2021 - October 2021</p>
+                  <h3 className={styles.name}>
+                    Turing School of Software & Design
+                  </h3>
+                  <h4>Certificate in Front-End Software Engineering</h4>
                 </div>
                 <p>
-                  Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in
-                  magna consectetur nisi cupidatat laboris esse eiusmod deserunt
-                  aute do quis velit esse sed Ut proident cupidatat nulla esse
-                  cillum laborum occaecat nostrud sit dolor incididunt amet est
-                  occaecat nisi.
+                  Turing is the sole{" "}
+                  <a
+                    href="https://ope.ed.gov/dapip/#/institution-profile/251075"
+                    target="_blank"
+                  >
+                    accredited
+                  </a>{" "}
+                  web development bootcamp in the U.S., offering intensive
+                  seven-month-long software development programs. Their
+                  Front-End program focuses on communication, collaboration,
+                  technical proficiency, and workflow best practices,
+                  incorporating user stories, wireframing, issue management,
+                  continuous integration/continuous deployment (CI/CD),
+                  test-driven development (TDD), and code review. The tech stack
+                  for the Front-End program includes HTML, CSS, JavaScript,
+                  TypeScript, React, and Cypress.
                 </p>
               </div>
 
               <div className={styles.block}>
                 <div className={styles.bullet}></div>
                 <div className={styles.header}>
-                  <p className={styles.timeframe}>July 2009 - June 2011</p>
-                  <h3 className={styles.name}>State Design University</h3>
-                  <h4>Bachelor Degree</h4>
+                  <p className={styles.timeframe}>January 2007 - May 2009</p>
+                  <h3 className={styles.name}>University of Florida</h3>
+                  <h4>Bachelor's Degree</h4>
                 </div>
                 <p>
-                  Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in
-                  magna consectetur nisi cupidatat laboris esse eiusmod deserunt
-                  aute do quis velit esse sed Ut proident cupidatat nulla esse
-                  cillum laborum occaecat nostrud sit dolor incididunt amet est
-                  occaecat nisi.
-                </p>
-              </div>
-
-              <div className={styles.block}>
-                <div className={styles.bullet}></div>
-                <div className={styles.header}>
-                  <p className={styles.timeframe}>July 2005 - June 2009</p>
-                  <h3 className={styles.name}>School of Hard Knocks</h3>
-                  <h4>Bachelor Degree</h4>
-                </div>
-                <p>
-                  Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in
-                  magna consectetur nisi cupidatat laboris esse eiusmod deserunt
-                  aute do quis velit esse sed Ut proident cupidatat nulla esse
-                  cillum laborum occaecat nostrud sit dolor incididunt amet est
-                  occaecat nisi.
+                  I graduated from the University of Florida with a Bachelor of
+                  Arts in Political Science and a minor in African Studies.
+                  During my academic tenure, I was an active member of our
+                  award-winning Model United Nations team and served as a board
+                  member for the Beta Gamma Chapter of Pi Sigma Alpha, the
+                  National Political Science Honor Society.
                 </p>
               </div>
             </div>
