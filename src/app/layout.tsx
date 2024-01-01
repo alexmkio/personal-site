@@ -27,8 +27,9 @@ const frankRuhlLibre = Frank_Ruhl_Libre({
 });
 
 export const metadata: Metadata = {
-  title: "Epitome",
-  description: "A Next.js portfolio starter",
+  title: "Alex Kio",
+  description:
+    "I am a Front-End software engineer based in the U.S. and this is my portfolio site.",
 };
 
 export default function RootLayout({

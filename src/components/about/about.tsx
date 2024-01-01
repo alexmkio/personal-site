@@ -68,7 +68,7 @@ export default function About() {
           </motion.div>
           <motion.div {...animationOptions}>
             <Link
-              href="/resume.pdf"
+              href="/Alex_Kio_Resume.pdf"
               target="_blank"
               className={styles.btnPrimary}
             >
@@ -123,7 +123,7 @@ export default function About() {
                   RTL & Jest, Sass, React Hook Form with Yup, React Table
                   (Tanstack), React Query w/ Axios, & Radix UI components to
                   deliver a secure front door to the firm{"'"}s valuable
-                  client-facing tools and content..
+                  client-facing tools and content.
                 </p>
                 <p className={styles.timeframe}>
                   February 2022 - December 2022
