@@ -72,7 +72,7 @@ export default function About() {
               target="_blank"
               className={styles.btnPrimary}
             >
-              View CV
+              View Resume
             </Link>
           </motion.div>
         </div>
