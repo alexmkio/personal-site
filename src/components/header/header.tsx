@@ -1,10 +1,14 @@
 import { Link as ReactScrollLink } from "react-scroll";
+import { useMediaQuery } from "react-responsive";
 import styles from "./header.module.scss";
 import { useState } from "react";
 import classNames from "classnames";
 
 export default function Header() {
   const [clicked, setClicked] = useState(false);
+  const isMobile = useMediaQuery({
+    query: "(max-width: 800px)",
+  });
 
   const handleClick = () => {
     setClicked(!clicked);
@@ -21,6 +25,7 @@ export default function Header() {
               to="intro"
               spy={true}
               smooth={true}
+              offset={isMobile ? -470 : -78}
               duration={800}
               onClick={handleClick}
             >
@@ -34,6 +39,7 @@ export default function Header() {
               to="about"
               spy={true}
               smooth={true}
+              offset={isMobile ? -470 : -78}
               duration={800}
               onClick={handleClick}
             >
@@ -47,6 +53,7 @@ export default function Header() {
               to="philosophy"
               spy={true}
               smooth={true}
+              offset={isMobile ? -470 : -78}
               duration={800}
               onClick={handleClick}
             >
@@ -60,6 +67,7 @@ export default function Header() {
               to="testimonials"
               spy={true}
               smooth={true}
+              offset={isMobile ? -470 : -78}
               duration={800}
               onClick={handleClick}
             >
@@ -73,6 +81,7 @@ export default function Header() {
               to="contact"
               spy={true}
               smooth={true}
+              offset={isMobile ? -470 : -78}
               duration={800}
               onClick={handleClick}
             >

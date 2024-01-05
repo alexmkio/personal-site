@@ -218,6 +218,24 @@
     top: 0;
     inset-inline-start: 0;
   }
+
+  @include breakpoint-down($breakpoint-800) {
+    font-size: 1.6rem;
+    padding-top: 0;
+    padding-bottom: 3.2rem;
+    text-align: center;
+
+    &::before {
+      top: auto;
+      bottom: 0;
+      inset-inline-start: 50%;
+      margin-inline-start: -75px;
+    }
+  }
+
+  @include breakpoint-down($breakpoint-600) {
+    margin-bottom: 6.8rem;
+  }
 }
 
 @mixin section-heading-center-bottom {
@@ -278,6 +296,10 @@
   line-height: 1.833;
   margin-bottom: 3.6rem;
   color: #000000;
+
+  @include breakpoint-down($breakpoint-1200) {
+    font-size: 2.2rem;
+  }
 }
 
 // Buttons
