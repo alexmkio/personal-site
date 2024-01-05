@@ -1,11 +1,18 @@
 import styles from "./about.module.scss";
-import { Element as ReactScrollElement } from "react-scroll";
 import { motion } from "framer-motion";
 import { animationOptions } from "../../utils/constants";
-import { Link as ReactScrollLink } from "react-scroll";
+import {
+  Link as ReactScrollLink,
+  Element as ReactScrollElement,
+} from "react-scroll";
+import { useMediaQuery } from "react-responsive";
 import Link from "next/link";
 
 export default function About() {
+  const isMobile = useMediaQuery({
+    query: "(max-width: 800px)",
+  });
+
   return (
     <ReactScrollElement name="about" className={styles.about}>
       <div>
@@ -61,6 +68,7 @@ export default function About() {
               to="contact"
               spy={true}
               smooth={true}
+              offset={isMobile ? -470 : -78}
               duration={800}
             >
               Contact Me
