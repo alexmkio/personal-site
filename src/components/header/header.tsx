@@ -16,7 +16,7 @@ export default function Header() {
 
   return (
     <header className={styles.header}>
-      <nav className={clicked ? styles.isClicked : ""}>
+      <nav className={clicked ? styles['is-clicked'] : ""}>
         <ul>
           <li>
             <ReactScrollLink
@@ -92,8 +92,8 @@ export default function Header() {
       </nav>
       <button
         className={classNames(
-          styles.headerMenuToggle,
-          clicked ? styles.isClicked : ""
+          styles['header-menu-toggle'],
+          clicked ? styles['is-clicked'] : ""
         )}
         onClick={handleClick}
         aria-label="Toggle Menu"

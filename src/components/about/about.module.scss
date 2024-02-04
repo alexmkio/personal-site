@@ -16,24 +16,24 @@
     @include mixins.section-heading;
   }
 
-  .headingRow,
-  .aboutMeRow,
-  .aboutMeButtons {
+  .heading-row,
+  .about-me-row,
+  .about-me-buttons {
     @include mixins.row;
 
     max-width: 1140px;
   }
 
-  .headingRow {
+  .heading-row {
     @include mixins.heading-block;
   }
 
-  .headingColumn {
+  .heading-column {
     @include mixins.column;
     @include mixins.large-full;
   }
 
-  .aboutMeColumn {
+  .about-me-column {
     @include mixins.column;
     @include mixins.large-full;
 
@@ -53,7 +53,7 @@
     }
   }
 
-  .aboutMeButtons {
+  .about-me-buttons {
     @include mixins.row;
     margin-top: 4.8rem;
 
@@ -103,17 +103,17 @@
       }
     }
 
-    .btnStroke,
-    .btnPrimary {
+    .btn-stroke,
+    .btn-primary {
       @include mixins.button;
       @include mixins.full-width;
     }
 
-    .btnStroke {
+    .btn-stroke {
       @include mixins.btn-stroke;
     }
 
-    .btnPrimary {
+    .btn-primary {
       @include mixins.btn-primary;
     }
   }
@@ -136,7 +136,7 @@
   }
 }
 
-.experienceRow {
+.experience-row {
   @include mixins.row;
   @include mixins.heading-block;
 
@@ -189,7 +189,7 @@
   }
 }
 
-.experienceColumn {
+.experience-column {
   @include mixins.column;
   @include mixins.large-half;
   @include mixins.tab-full;
@@ -221,7 +221,7 @@
     top: 0;
   }
 
-  .iconWrap {
+  .icon-wrap {
     display: block;
     width: 6rem;
     height: 6rem;
@@ -248,27 +248,15 @@
     }
   }
 
-  .workIcon,
-  .educationIcon {
+  .work-icon,
+  .education-icon {
     display: block;
     width: 2.5rem;
     height: 2.5rem;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
-    -webkit-transform: translate3d(-50%, -50%, 0);
     transform: translate3d(-50%, -50%, 0);
     position: absolute;
     inset-inline-start: 50%;
     top: 50%;
-  }
-
-  .workIcon {
-    background-image: url(/assets/icons/icon-briefcase.svg);
-  }
-
-  .educationIcon {
-    background-image: url(/assets/icons/icon-education.svg);
   }
 
   .block {

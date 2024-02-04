@@ -4,12 +4,19 @@
 .philosophy {
   padding-top: 19.2rem;
   padding-bottom: 16rem;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  background-image: url(/assets/images/services-bg.webp);
   color: rgba(255, 255, 255, 0.7);
   position: relative;
+
+  .background-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate3d(-50%, -50%, 0);
+    inset-inline-start: 50%;
+    top: 50%;
+    z-index: -1;
+  }
 
   &::before {
     content: "";
@@ -32,13 +39,13 @@
     background: radial-gradient(circle, rgba(0, 0, 0, 0) 0%, black 80%);
   }
 
-  .headingRow {
+  .heading-row {
     @include mixins.row;
     @include mixins.heading-block;
     @include mixins.heading-block-center;
   }
 
-  .headingColumn {
+  .heading-column {
     @include mixins.column;
     @include mixins.large-full;
   }
@@ -58,16 +65,16 @@
     }
   }
 
-  .sectionDescription {
+  .section-description {
     @include mixins.section-desc;
   }
 
   h2,
-  .sectionDescription {
+  .section-description {
     @include mixins.color-white;
   }
 
-  .philosophyList {
+  .philosophy-list {
     @include mixins.row;
 
     max-width: 1240px;
@@ -89,7 +96,7 @@
     @include mixins.block-tab-full;
   }
 
-  .philosophyItemContainer {
+  .philosophy-item-container {
     @include mixins.column;
 
     margin-bottom: 2.4rem;
@@ -114,7 +121,7 @@
     }
   }
 
-  .philosophyItemContent {
+  .philosophy-item-content {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding-top: 3.6rem;
 

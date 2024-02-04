@@ -5,6 +5,10 @@ import Slider from "react-slick";
 import { motion } from "framer-motion";
 import styles from "./slider.module.scss";
 import { animationOptions } from "../../utils/constants";
+import hayley from "../../../public/assets/images/hayley.webp";
+import stephanie from "../../../public/assets/images/stephanie.webp";
+import megan from "../../../public/assets/images/megan.webp";
+import nina from "../../../public/assets/images/nina.webp";
 
 export default function Carousel() {
   const settings = {
@@ -35,8 +39,8 @@ export default function Carousel() {
   };
   return (
     <ReactScrollElement name="testimonials" className={styles.testimonials}>
-      <motion.div className={styles.headingRow} {...animationOptions}>
-        <Slider {...settings} className={styles.headingColumn}>
+      <motion.div className={styles["heading-row"]} {...animationOptions}>
+        <Slider {...settings} className={styles["heading-column"]}>
           <article>
             <p>
               We have worked on group projects together, where his strengths
@@ -48,10 +52,8 @@ export default function Carousel() {
             </p>
             <div className={styles.info}>
               <Image
-                src="/assets/images/hayley.webp"
-                width={512}
-                height={512}
-                alt="Author image"
+                src={hayley}
+                alt="Hayley Witherell"
                 className={styles.avatar}
               />
               <cite className={styles.cite}>
@@ -72,10 +74,8 @@ export default function Carousel() {
             </p>
             <div className={styles.info}>
               <Image
-                src="/assets/images/stephanie.webp"
-                width={200}
-                height={200}
-                alt="Author image"
+                src={stephanie}
+                alt="Stephanie Magdic"
                 className={styles.avatar}
               />
               <cite className={styles.cite}>
@@ -96,10 +96,8 @@ export default function Carousel() {
             </p>
             <div className={styles.info}>
               <Image
-                src="/assets/images/megan.webp"
-                width={512}
-                height={512}
-                alt="Author image"
+                src={megan}
+                alt="Megan McBride"
                 className={styles.avatar}
               />
               <cite className={styles.cite}>
@@ -116,13 +114,7 @@ export default function Carousel() {
               to respond and offer assistance.
             </p>
             <div className={styles.info}>
-              <Image
-                src="/assets/images/nina.webp"
-                width={200}
-                height={200}
-                alt="Author image"
-                className={styles.avatar}
-              />
+              <Image src={nina} alt="Nina Brissey" className={styles.avatar} />
               <cite className={styles.cite}>
                 <strong>Nina Brissey</strong>
                 <span>Software Developer, Thoughtworks</span>

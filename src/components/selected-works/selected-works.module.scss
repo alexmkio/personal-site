@@ -1,18 +1,18 @@
 @use "../../styles/mixins" as mixins;
 @use "../../styles/variables" as *;
 
-.selectedWorks {
+.selected-works {
   padding-top: 19.2rem;
   padding-bottom: 16rem;
   background-color: #ffffff;
 
-  .headingRow {
+  .heading-row {
     @include mixins.row;
     @include mixins.heading-block;
     @include mixins.heading-block-center;
   }
 
-  .headingColumn {
+  .heading-column {
     @include mixins.column;
     @include mixins.large-full;
   }
@@ -22,7 +22,7 @@
     @include mixins.section-heading-center-bottom;
   }
 
-  .sectionDescription {
+  .section-description {
     @include mixins.section-desc;
   }
 
@@ -72,18 +72,11 @@
         visibility: hidden;
       }
 
-      &::after {
-        display: block;
-        content: "";
-        width: 3.6rem;
-        height: 3.6rem;
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: 80%;
-        background-image: url(/assets/icons/icon-plus.svg);
+      .plus-icon {
+        width: 2.88rem;
+        height: 2.88rem;
         opacity: 0;
         visibility: hidden;
-        -webkit-transform: translate3d(-50%, -50%, 0);
         transform: translate3d(-50%, -50%, 0);
         z-index: 2;
         position: absolute;
@@ -99,7 +92,7 @@
     &:hover {
       a {
         &::before,
-        &::after {
+        .plus-icon {
           opacity: 1;
           visibility: visible;
         }

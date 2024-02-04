@@ -5,7 +5,9 @@ on:
     branches: ["main"]
 
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
   build-and-deploy:
@@ -28,8 +30,8 @@ jobs:
       - name: Install (clean) and Build
         run: npm ci && npm run build-storybook
 
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4
+      - name: Build & Deploy Storybook
+        id: build-publish
+        uses: bitovi/github-actions-storybook-to-github-pages@v1.0.2
         with:
-          branch: gh-pages
-          folder: storybook-static
+          path: storybook-static

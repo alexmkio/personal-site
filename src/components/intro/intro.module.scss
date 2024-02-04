@@ -20,7 +20,7 @@
   }
 }
 
-.introContent {
+.intro-content {
   @include mixins.row;
 
   height: 100%;
@@ -44,7 +44,7 @@
   }
 }
 
-.introText {
+.intro-text {
   @include mixins.column;
   @include mixins.large-9;
   @include mixins.mob-full;
@@ -141,7 +141,7 @@
   }
 }
 
-.introScroll {
+.intro-scroll {
   font-family: $font-roboto;
   font-weight: 400;
   font-size: 1.2rem;
@@ -176,8 +176,7 @@
   }
 }
 
-.introGrid {
-  background-image: url(/assets/images/pattern-dot-grid.svg);
+.intro-grid {
   background-size: 24px 24px;
   background-repeat: repeat;
   opacity: 0.15;
@@ -201,11 +200,10 @@
   }
 }
 
-.introPic {
+.intro-pic {
   background-color: #02182c;
   background-repeat: no-repeat;
   background-position: top center;
-  background-image: url(/assets/images/hero-pic.webp);
   background-size: cover;
   position: absolute;
   top: 7%;

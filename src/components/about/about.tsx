@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styles from "./about.module.scss";
 import { motion } from "framer-motion";
 import { animationOptions } from "../../utils/constants";
@@ -7,6 +8,8 @@ import {
 } from "react-scroll";
 import { useMediaQuery } from "react-responsive";
 import Link from "next/link";
+import workIcon from "../../../public/assets/icons/icon-briefcase.svg";
+import educationIcon from "../../../public/assets/icons/icon-education.svg";
 
 export default function About() {
   const isMobile = useMediaQuery({
@@ -16,13 +19,13 @@ export default function About() {
   return (
     <ReactScrollElement name="about" className={styles.about}>
       <div>
-        <motion.div className={styles.headingRow} {...animationOptions}>
-          <div className={styles.headingColumn}>
+        <motion.div className={styles["heading-row"]} {...animationOptions}>
+          <div className={styles["heading-column"]}>
             <h2>About Me</h2>
           </div>
         </motion.div>
-        <motion.div className={styles.aboutMeRow} {...animationOptions}>
-          <div className={styles.aboutMeColumn}>
+        <motion.div className={styles["about-me-row"]} {...animationOptions}>
+          <div className={styles["about-me-column"]}>
             <p>
               I am a compassionate and forward-thinking software engineer,
               driven by a passion for problem-solving. Whether backpacking
@@ -61,10 +64,10 @@ export default function About() {
             </p>
           </div>
         </motion.div>
-        <div className={styles.aboutMeButtons}>
+        <div className={styles["about-me-buttons"]}>
           <motion.div {...animationOptions}>
             <ReactScrollLink
-              className={styles.btnStroke}
+              className={styles["btn-stroke"]}
               to="contact"
               spy={true}
               smooth={true}
@@ -78,7 +81,7 @@ export default function About() {
             <Link
               href="/Alex_Kio_Resume.pdf"
               target="_blank"
-              className={styles.btnPrimary}
+              className={styles["btn-primary"]}
             >
               View Resume
             </Link>
@@ -87,19 +90,26 @@ export default function About() {
       </div>
 
       <div>
-        <motion.div className={styles.headingRow} {...animationOptions}>
-          <div className={styles.headingColumn}>
+        <motion.div className={styles["heading-row"]} {...animationOptions}>
+          <div className={styles["heading-column"]}>
             <h2>Work & Education</h2>
           </div>
         </motion.div>
-        <div className={styles.experienceRow}>
-          <motion.div className={styles.experienceColumn} {...animationOptions}>
+        <div className={styles["experience-row"]}>
+          <motion.div
+            className={styles["experience-column"]}
+            {...animationOptions}
+          >
             <div className={styles.timeline}>
-              <div className={styles.iconWrap}>
-                <span className={styles.workIcon}></span>
+              <div className={styles["icon-wrap"]}>
+                <Image
+                  src={workIcon}
+                  alt="icon of a briefcase"
+                  className={styles["work-icon"]}
+                />
               </div>
               <div className={styles.block}>
-                <div className={styles.bullet}></div>
+                <div className={styles.bullet} />
                 <div className={styles.header}>
                   <p className={styles.timeframe}>January 2022 - Present</p>
                   <h3 className={styles.name}>Rightpoint</h3>
@@ -149,7 +159,7 @@ export default function About() {
               </div>
 
               <div className={styles.block}>
-                <div className={styles.bullet}></div>
+                <div className={styles.bullet} />
                 <div className={styles.header}>
                   <p className={styles.timeframe}>December 2017 - March 2021</p>
                   <h3 className={styles.name}>University of Florida</h3>
@@ -166,7 +176,7 @@ export default function About() {
               </div>
 
               <div className={styles.block}>
-                <div className={styles.bullet}></div>
+                <div className={styles.bullet} />
                 <div className={styles.header}>
                   <p className={styles.timeframe}>June 2016 - November 2017</p>
                   <h3 className={styles.name}>Rocky Mountain Labs</h3>
@@ -188,14 +198,21 @@ export default function About() {
             </div>
           </motion.div>
 
-          <motion.div className={styles.experienceColumn} {...animationOptions}>
+          <motion.div
+            className={styles["experience-column"]}
+            {...animationOptions}
+          >
             <div className={styles.timeline}>
-              <div className={styles.iconWrap}>
-                <span className={styles.educationIcon}></span>
+              <div className={styles["icon-wrap"]}>
+                <Image
+                  src={educationIcon}
+                  alt="icon of a graduation cap"
+                  className={styles["education-icon"]}
+                />
               </div>
 
               <div className={styles.block}>
-                <div className={styles.bullet}></div>
+                <div className={styles.bullet} />
                 <div className={styles.header}>
                   <p className={styles.timeframe}>March 2021 - October 2021</p>
                   <h3 className={styles.name}>
@@ -224,7 +241,7 @@ export default function About() {
               </div>
 
               <div className={styles.block}>
-                <div className={styles.bullet}></div>
+                <div className={styles.bullet} />
                 <div className={styles.header}>
                   <p className={styles.timeframe}>January 2007 - May 2009</p>
                   <h3 className={styles.name}>University of Florida</h3>
@@ -237,6 +254,20 @@ export default function About() {
                   award-winning Model United Nations team and served as a board
                   member for the Beta Gamma Chapter of Pi Sigma Alpha, the
                   National Political Science Honor Society.
+                </p>
+              </div>
+
+              <div className={styles.block}>
+                <div className={styles.bullet} />
+                <div className={styles.header}>
+                  <p className={styles.timeframe}>February 2024</p>
+                  <h3 className={styles.name}>Contentful</h3>
+                  <h4>Contentful Certified Professional</h4>
+                </div>
+                <p>
+                  Credential ID 294974176
+                  <br />
+                  Expires February 2026
                 </p>
               </div>
             </div>

@@ -39,37 +39,37 @@
     }
   }
 
-  .goToTop {
+  .go-to-top {
     position: absolute;
     top: -1px;
     inset-inline-end: 6rem;
     z-index: 2;
+    background: rgba(255, 255, 255, 0.05);
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    transition: all 0.3s;
+
+    &:hover,
+    &:focus {
+      background-color: #cf1767;
+      color: #ffffff;
+    }
 
     .arrow {
-      display: block;
-      background: rgba(255, 255, 255, 0.05);
-      text-decoration: none;
-      margin: 0;
-      padding: 0;
-      border: 0 none;
-      height: 60px;
-      width: 60px;
-      line-height: 60px;
-      text-align: center;
-      color: white;
-      text-transform: uppercase;
-      transition: all 0.3s;
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-image: url(/assets/icons/icon-arrow-up.svg);
-      background-size: 10px 16px;
-      position: relative;
-
-      &:hover,
-      &:focus {
-        background-color: #cf1767;
-        color: #ffffff;
-      }
+      position: absolute;
+      width: 10px;
+      height: 16px;
+      transform: translate3d(-50%, -50%, 0);
+      inset-inline-start: 50%;
+      top: 50%;
     }
 
     &::before {
@@ -115,13 +115,13 @@
   }
 
   @include mixins.breakpoint-down($breakpoint-1200) {
-    .goToTop {
+    .go-to-top {
       inset-inline-end: 3rem;
     }
   }
 
   @include mixins.breakpoint-down($breakpoint-900) {
-    .goToTop {
+    .go-to-top {
       inset-inline-end: 0;
 
       &::before,
@@ -146,7 +146,7 @@
       }
     }
 
-    .goToTop {
+    .go-to-top {
       inset-inline-end: 50%;
       margin-inline-end: -30px;
     }
@@ -162,7 +162,7 @@
 }
 
 :global([dir="rtl"]) .footer {
-  .goToTop {
+  .go-to-top {
     &::after {
       -webkit-transform: rotate(90deg);
       transform: rotate(90deg);

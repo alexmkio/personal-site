@@ -6,13 +6,13 @@ import { animationOptions } from "../../utils/constants";
 export default function Contact() {
   return (
     <ReactScrollElement name="contact" className={styles.contact}>
-      <motion.div className={styles.headingRow} {...animationOptions}>
-        <div className={styles.headingColumn}>
+      <motion.div className={styles["heading-row"]} {...animationOptions}>
+        <div className={styles["heading-column"]}>
           <h2>Get In Touch</h2>
         </div>
       </motion.div>
-      <motion.div className={styles.mainRow} {...animationOptions}>
-        <div className={styles.mainColumn}>
+      <motion.div className={styles["main-row"]} {...animationOptions}>
+        <div className={styles["main-column"]}>
           <p className={styles.email}>
             <a href="mailto:me@alexkio.com" target="_blank">
               me@alexkio.com
@@ -29,7 +29,7 @@ export default function Contact() {
         </div>
       </motion.div>
       <motion.div className={styles.infos} {...animationOptions}>
-        <div className={styles.professionalInfo}>
+        <div className={styles["professional-info"]}>
           <h3>Links</h3>
           <ul>
             <li>
