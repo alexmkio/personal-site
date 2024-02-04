@@ -106,7 +106,7 @@ export default function About() {
                 />
               </div>
               <div className={styles.block}>
-                <div className={styles.bullet}></div>
+                <div className={styles.bullet} />
                 <div className={styles.header}>
                   <p className={styles.timeframe}>January 2022 - Present</p>
                   <h3 className={styles.name}>Rightpoint</h3>
@@ -156,7 +156,7 @@ export default function About() {
               </div>
 
               <div className={styles.block}>
-                <div className={styles.bullet}></div>
+                <div className={styles.bullet} />
                 <div className={styles.header}>
                   <p className={styles.timeframe}>December 2017 - March 2021</p>
                   <h3 className={styles.name}>University of Florida</h3>
@@ -173,7 +173,7 @@ export default function About() {
               </div>
 
               <div className={styles.block}>
-                <div className={styles.bullet}></div>
+                <div className={styles.bullet} />
                 <div className={styles.header}>
                   <p className={styles.timeframe}>June 2016 - November 2017</p>
                   <h3 className={styles.name}>Rocky Mountain Labs</h3>
@@ -206,7 +206,7 @@ export default function About() {
               </div>
 
               <div className={styles.block}>
-                <div className={styles.bullet}></div>
+                <div className={styles.bullet} />
                 <div className={styles.header}>
                   <p className={styles.timeframe}>March 2021 - October 2021</p>
                   <h3 className={styles.name}>
@@ -235,7 +235,7 @@ export default function About() {
               </div>
 
               <div className={styles.block}>
-                <div className={styles.bullet}></div>
+                <div className={styles.bullet} />
                 <div className={styles.header}>
                   <p className={styles.timeframe}>January 2007 - May 2009</p>
                   <h3 className={styles.name}>University of Florida</h3>
