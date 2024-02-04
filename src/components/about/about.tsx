@@ -256,6 +256,20 @@ export default function About() {
                   National Political Science Honor Society.
                 </p>
               </div>
+
+              <div className={styles.block}>
+                <div className={styles.bullet} />
+                <div className={styles.header}>
+                  <p className={styles.timeframe}>February 2024</p>
+                  <h3 className={styles.name}>Contentful</h3>
+                  <h4>Contentful Certified Professional</h4>
+                </div>
+                <p>
+                  Credential ID 294974176
+                  <br />
+                  Expires February 2026
+                </p>
+              </div>
             </div>
           </motion.div>
         </div>
