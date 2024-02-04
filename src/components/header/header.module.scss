@@ -44,7 +44,7 @@
   }
 }
 
-.headerMenuToggle {
+.header-menu-toggle {
   display: none;
   height: 42px;
   width: 42px;
@@ -105,7 +105,7 @@
     }
   }
 
-  &.isClicked {
+  &.is-clicked {
     span {
       background-color: rgba(255, 255, 255, 0);
       transition: all 0.1s;
@@ -149,7 +149,7 @@
       overflow: hidden;
       transition: max-height 700ms ease;
 
-      &.isClicked {
+      &.is-clicked {
         max-height: 1000px;
       }
 
@@ -173,7 +173,7 @@
     }
   }
 
-  .headerMenuToggle {
+  .header-menu-toggle {
     display: block;
   }
 }

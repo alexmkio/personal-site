@@ -19,13 +19,13 @@ export default function About() {
   return (
     <ReactScrollElement name="about" className={styles.about}>
       <div>
-        <motion.div className={styles.headingRow} {...animationOptions}>
-          <div className={styles.headingColumn}>
+        <motion.div className={styles["heading-row"]} {...animationOptions}>
+          <div className={styles["heading-column"]}>
             <h2>About Me</h2>
           </div>
         </motion.div>
-        <motion.div className={styles.aboutMeRow} {...animationOptions}>
-          <div className={styles.aboutMeColumn}>
+        <motion.div className={styles["about-me-row"]} {...animationOptions}>
+          <div className={styles["about-me-column"]}>
             <p>
               I am a compassionate and forward-thinking software engineer,
               driven by a passion for problem-solving. Whether backpacking
@@ -64,10 +64,10 @@ export default function About() {
             </p>
           </div>
         </motion.div>
-        <div className={styles.aboutMeButtons}>
+        <div className={styles["about-me-buttons"]}>
           <motion.div {...animationOptions}>
             <ReactScrollLink
-              className={styles.btnStroke}
+              className={styles["btn-stroke"]}
               to="contact"
               spy={true}
               smooth={true}
@@ -81,7 +81,7 @@ export default function About() {
             <Link
               href="/Alex_Kio_Resume.pdf"
               target="_blank"
-              className={styles.btnPrimary}
+              className={styles["btn-primary"]}
             >
               View Resume
             </Link>
@@ -90,19 +90,22 @@ export default function About() {
       </div>
 
       <div>
-        <motion.div className={styles.headingRow} {...animationOptions}>
-          <div className={styles.headingColumn}>
+        <motion.div className={styles["heading-row"]} {...animationOptions}>
+          <div className={styles["heading-column"]}>
             <h2>Work & Education</h2>
           </div>
         </motion.div>
-        <div className={styles.experienceRow}>
-          <motion.div className={styles.experienceColumn} {...animationOptions}>
+        <div className={styles["experience-row"]}>
+          <motion.div
+            className={styles["experience-column"]}
+            {...animationOptions}
+          >
             <div className={styles.timeline}>
-              <div className={styles.iconWrap}>
+              <div className={styles["icon-wrap"]}>
                 <Image
                   src={workIcon}
                   alt="icon of a briefcase"
-                  className={styles.workIcon}
+                  className={styles["work-icon"]}
                 />
               </div>
               <div className={styles.block}>
@@ -195,13 +198,16 @@ export default function About() {
             </div>
           </motion.div>
 
-          <motion.div className={styles.experienceColumn} {...animationOptions}>
+          <motion.div
+            className={styles["experience-column"]}
+            {...animationOptions}
+          >
             <div className={styles.timeline}>
-              <div className={styles.iconWrap}>
+              <div className={styles["icon-wrap"]}>
                 <Image
                   src={educationIcon}
                   alt="icon of a graduation cap"
-                  className={styles.educationIcon}
+                  className={styles["education-icon"]}
                 />
               </div>
 

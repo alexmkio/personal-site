@@ -7,8 +7,8 @@ import heroPic from "../../../public/assets/images/hero-pic.webp";
 export default function Intro() {
   return (
     <ReactScrollElement name="intro" className={styles.intro}>
-      <div className={styles.introContent}>
-        <div className={styles.introText}>
+      <div className={styles["intro-content"]}>
+        <div className={styles["intro-text"]}>
           <h1>Hello, I'm Alex Kio</h1>
           <h2>
             Web Developer
@@ -16,20 +16,20 @@ export default function Intro() {
             Based In Florida
           </h2>
         </div>
-        <div className={styles.introScroll}>
+        <div className={styles["intro-scroll"]}>
           <Link href="#about">Scroll For More</Link>
         </div>
         <div
           style={{
             backgroundImage: `url(${dotPattern.src})`,
           }}
-          className={styles.introGrid}
+          className={styles["intro-grid"]}
         />
         <div
           style={{
             backgroundImage: `url(${heroPic.src})`,
           }}
-          className={styles.introPic}
+          className={styles["intro-pic"]}
         />
       </div>
     </ReactScrollElement>

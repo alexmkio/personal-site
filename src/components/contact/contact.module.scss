@@ -6,12 +6,12 @@
   padding-bottom: 6.4rem;
   background-color: #050505;
 
-  .headingRow {
+  .heading-row {
     @include mixins.row;
     @include mixins.heading-block;
   }
 
-  .headingColumn {
+  .heading-column {
     @include mixins.column;
     @include mixins.large-full;
   }
@@ -21,7 +21,7 @@
     color: #ffffff;
   }
 
-  .mainRow {
+  .main-row {
     @include mixins.row;
 
     a {
@@ -45,7 +45,7 @@
     margin: 5.6rem 0 8rem;
   }
 
-  .mainColumn {
+  .main-column {
     @include mixins.column;
     @include mixins.large-full;
   }
@@ -64,8 +64,8 @@
     font-size: 4.2rem;
     line-height: 1.333;
 
-    .socialInfo,
-    .professionalInfo {
+    .social-info,
+    .professional-info {
       margin-bottom: 1.6rem;
     }
 
@@ -80,13 +80,13 @@
     }
   }
 
-  .socialInfo {
+  .social-info {
     @include mixins.column;
     @include mixins.large-5;
     @include mixins.medium-full;
   }
 
-  .professionalInfo {
+  .professional-info {
     @include mixins.column;
     @include mixins.large-7;
     @include mixins.medium-full;

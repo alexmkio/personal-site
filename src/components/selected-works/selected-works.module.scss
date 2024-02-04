@@ -1,18 +1,18 @@
 @use "../../styles/mixins" as mixins;
 @use "../../styles/variables" as *;
 
-.selectedWorks {
+.selected-works {
   padding-top: 19.2rem;
   padding-bottom: 16rem;
   background-color: #ffffff;
 
-  .headingRow {
+  .heading-row {
     @include mixins.row;
     @include mixins.heading-block;
     @include mixins.heading-block-center;
   }
 
-  .headingColumn {
+  .heading-column {
     @include mixins.column;
     @include mixins.large-full;
   }
@@ -22,7 +22,7 @@
     @include mixins.section-heading-center-bottom;
   }
 
-  .sectionDescription {
+  .section-description {
     @include mixins.section-desc;
   }
 

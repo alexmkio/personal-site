@@ -14,11 +14,11 @@ import styles from "./selected-works.module.scss";
 
 export default function SelectedWorks() {
   return (
-    <ReactScrollElement name="works" className={styles.selectedWorks}>
-      <motion.div className={styles.headingRow} {...animationOptions}>
-        <div className={styles.headingColumn}>
+    <ReactScrollElement name="works" className={styles["selected-works"]}>
+      <motion.div className={styles["heading-row"]} {...animationOptions}>
+        <div className={styles["heading-column"]}>
           <h2>Selected Works</h2>
-          <p className={styles.sectionDescription}>
+          <p className={styles["section-description"]}>
             Here are some of my selected works I have done lately. Feel free to
             check them out.
           </p>

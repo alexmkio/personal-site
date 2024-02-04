@@ -39,8 +39,8 @@ export default function Carousel() {
   };
   return (
     <ReactScrollElement name="testimonials" className={styles.testimonials}>
-      <motion.div className={styles.headingRow} {...animationOptions}>
-        <Slider {...settings} className={styles.headingColumn}>
+      <motion.div className={styles["heading-row"]} {...animationOptions}>
+        <Slider {...settings} className={styles["heading-column"]}>
           <article>
             <p>
               We have worked on group projects together, where his strengths

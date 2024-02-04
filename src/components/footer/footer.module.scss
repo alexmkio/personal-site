@@ -39,7 +39,7 @@
     }
   }
 
-  .goToTop {
+  .go-to-top {
     position: absolute;
     top: -1px;
     inset-inline-end: 6rem;
@@ -115,13 +115,13 @@
   }
 
   @include mixins.breakpoint-down($breakpoint-1200) {
-    .goToTop {
+    .go-to-top {
       inset-inline-end: 3rem;
     }
   }
 
   @include mixins.breakpoint-down($breakpoint-900) {
-    .goToTop {
+    .go-to-top {
       inset-inline-end: 0;
 
       &::before,
@@ -146,7 +146,7 @@
       }
     }
 
-    .goToTop {
+    .go-to-top {
       inset-inline-end: 50%;
       margin-inline-end: -30px;
     }
@@ -162,7 +162,7 @@
 }
 
 :global([dir="rtl"]) .footer {
-  .goToTop {
+  .go-to-top {
     &::after {
       -webkit-transform: rotate(90deg);
       transform: rotate(90deg);

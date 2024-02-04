@@ -16,7 +16,7 @@ export default function Footer() {
             })
           }
         >
-          <div className={styles.goToTop}>
+          <div className={styles["go-to-top"]}>
             <Image src={upArrow} alt="up arrow" className={styles.arrow} />
           </div>
         </a>

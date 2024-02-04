@@ -14,21 +14,21 @@ export default function Philosophy() {
         className={styles["background-image"]}
       />
       <div className={styles.overlay} />
-      <motion.div className={styles.headingRow} {...animationOptions}>
-        <div className={styles.headingColumn}>
+      <motion.div className={styles["heading-row"]} {...animationOptions}>
+        <div className={styles["heading-column"]}>
           <h2>Development Philosophy</h2>
-          <p className={styles.sectionDescription}>
+          <p className={styles["section-description"]}>
             I am passionate about creating engaging and accessible software that
             is scalable, performant, and robust.
           </p>
         </div>
       </motion.div>
-      <div className={styles.philosophyList}>
+      <div className={styles["philosophy-list"]}>
         <motion.div
-          className={styles.philosophyItemContainer}
+          className={styles["philosophy-item-container"]}
           {...animationOptions}
         >
-          <div className={styles.philosophyItemContent}>
+          <div className={styles["philosophy-item-content"]}>
             <h3>Collaborative</h3>
             <p>
               I firmly believe that the cornerstone of any project's success
@@ -40,10 +40,10 @@ export default function Philosophy() {
           </div>
         </motion.div>
         <motion.div
-          className={styles.philosophyItemContainer}
+          className={styles["philosophy-item-container"]}
           {...animationOptions}
         >
-          <div className={styles.philosophyItemContent}>
+          <div className={styles["philosophy-item-content"]}>
             <h3>Accessible</h3>
             <p>
               Companies that prioritize accessibility demonstrate social
@@ -55,10 +55,10 @@ export default function Philosophy() {
           </div>
         </motion.div>
         <motion.div
-          className={styles.philosophyItemContainer}
+          className={styles["philosophy-item-container"]}
           {...animationOptions}
         >
-          <div className={styles.philosophyItemContent}>
+          <div className={styles["philosophy-item-content"]}>
             <h3>Scalable</h3>
             <p>
               Writing modular code ensures that a codebase remains maintainable,
@@ -70,10 +70,10 @@ export default function Philosophy() {
           </div>
         </motion.div>
         <motion.div
-          className={styles.philosophyItemContainer}
+          className={styles["philosophy-item-container"]}
           {...animationOptions}
         >
-          <div className={styles.philosophyItemContent}>
+          <div className={styles["philosophy-item-content"]}>
             <h3>Performant</h3>
             <p>
               Optimized code directly impacts the user experience and search
@@ -86,10 +86,10 @@ export default function Philosophy() {
           </div>
         </motion.div>
         <motion.div
-          className={styles.philosophyItemContainer}
+          className={styles["philosophy-item-container"]}
           {...animationOptions}
         >
-          <div className={styles.philosophyItemContent}>
+          <div className={styles["philosophy-item-content"]}>
             <h3>Tested</h3>
             <p>
               Tests provide confidence in code correctness, save time and costs,
@@ -100,10 +100,10 @@ export default function Philosophy() {
           </div>
         </motion.div>
         <motion.div
-          className={styles.philosophyItemContainer}
+          className={styles["philosophy-item-container"]}
           {...animationOptions}
         >
-          <div className={styles.philosophyItemContent}>
+          <div className={styles["philosophy-item-content"]}>
             <h3>Responsive</h3>
             <p>
               Responsive design anticipates and accommodates the diversity of

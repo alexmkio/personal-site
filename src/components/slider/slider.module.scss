@@ -6,13 +6,13 @@
   padding-bottom: 16rem;
   background-color: #efefef;
 
-  .headingRow {
+  .heading-row {
     @include mixins.row;
 
     position: relative;
   }
 
-  .headingColumn {
+  .heading-column {
     @include mixins.column;
     @include mixins.large-full;
 
@@ -77,7 +77,7 @@
   }
 
   @include mixins.breakpoint-down($breakpoint-1200) {
-    .headingRow {
+    .heading-row {
       max-width: 1000px;
     }
 
@@ -107,7 +107,7 @@
   }
 
   @include mixins.breakpoint-down($breakpoint-1000) {
-    .headingRow {
+    .heading-row {
       max-width: 800px;
     }
 
