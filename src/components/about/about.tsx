@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styles from "./about.module.scss";
 import { motion } from "framer-motion";
 import { animationOptions } from "../../utils/constants";
@@ -7,6 +8,8 @@ import {
 } from "react-scroll";
 import { useMediaQuery } from "react-responsive";
 import Link from "next/link";
+import workIcon from "../../../public/assets/icons/icon-briefcase.svg";
+import educationIcon from "../../../public/assets/icons/icon-education.svg";
 
 export default function About() {
   const isMobile = useMediaQuery({
@@ -96,7 +99,11 @@ export default function About() {
           <motion.div className={styles.experienceColumn} {...animationOptions}>
             <div className={styles.timeline}>
               <div className={styles.iconWrap}>
-                <span className={styles.workIcon}></span>
+                <Image
+                  src={workIcon}
+                  alt="icon of a briefcase"
+                  className={styles.workIcon}
+                />
               </div>
               <div className={styles.block}>
                 <div className={styles.bullet}></div>
@@ -191,7 +198,11 @@ export default function About() {
           <motion.div className={styles.experienceColumn} {...animationOptions}>
             <div className={styles.timeline}>
               <div className={styles.iconWrap}>
-                <span className={styles.educationIcon}></span>
+                <Image
+                  src={educationIcon}
+                  alt="icon of a graduation cap"
+                  className={styles.educationIcon}
+                />
               </div>
 
               <div className={styles.block}>

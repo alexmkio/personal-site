@@ -253,22 +253,10 @@
     display: block;
     width: 2.5rem;
     height: 2.5rem;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
-    -webkit-transform: translate3d(-50%, -50%, 0);
     transform: translate3d(-50%, -50%, 0);
     position: absolute;
     inset-inline-start: 50%;
     top: 50%;
-  }
-
-  .workIcon {
-    background-image: url(/assets/icons/icon-briefcase.svg);
-  }
-
-  .educationIcon {
-    background-image: url(/assets/icons/icon-education.svg);
   }
 
   .block {
