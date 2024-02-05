@@ -50,7 +50,7 @@ export default function Philosophy() {
               responsibility and inclusivity. Using semantic HTML, incorporating
               ARIA roles and attributes where applicable, providing focus
               states, and ensuring ample color contrast are some of the ways
-              that I ensure my applications are accessible to all users
+              that I ensure my applications are accessible to all users.
             </p>
           </div>
         </motion.div>
